@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss'
-import { nextui } from "@nextui-org/react";
 
 const config: Config = {
   content: [
@@ -7,20 +6,24 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/features/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    // nextUI
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
 
   ],
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "ButtonImage": "url('/images/buttonBg.svg')",
+        "BodyImage": "url('/images/bodyBg.svg')",
+        "headeangImage": "url('/images/headingLine.svg')",
       },
+      colors: {
+        primary: "#820000",
+        secondary: "#4E6C50",
+        tertiary: "#F2DEBA",
+        quaternary: "#FFFBF7",
+        quinary: "#212121"
+      }
     },
   },
-  darkMode: "class",
-  plugins: [nextui()]
+  plugins: []
 }
 export default config

@@ -1,1 +1,0 @@
-export { NextUiProvider } from './NextUi.provider'
