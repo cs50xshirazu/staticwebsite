@@ -1,10 +1,10 @@
-import NavBar from "@/features/NavBar/NavBar.feature";
-import Image from "next/image";
+import { Header, NavBar } from "@/features";
 
 export default function Home() {
   return (
     <>
       <NavBar />
+      <Header />
     </>
   );
 }

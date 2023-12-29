@@ -4,7 +4,7 @@ import React from "react";
 import cs50ShirazU from "../../../public/images/cs50ShirazU.svg";
 type Props = {};
 
-const NavBar = (props: Props) => {
+export const NavBar = (props: Props) => {
   return (
     <nav className="w-full h-32 px-28 py-2.5 flex justify-center items-center flex-col">
       <div className="w-full h-fit flex justify-between items-center">
@@ -20,5 +20,3 @@ const NavBar = (props: Props) => {
     </nav>
   );
 };
-
-export default NavBar;

@@ -21,6 +21,9 @@ const config: Config = {
         tertiary: "#F2DEBA",
         quaternary: "#FFFBF7",
         quinary: "#212121"
+      },
+      fontSize: {
+        "2.5xl": '1.75rem'
       }
     },
   },
