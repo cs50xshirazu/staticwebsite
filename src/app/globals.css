@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer utilities {
+    .p-page {
+        @apply px-28 
+    }
     .bg-size-100 {
         background-size: 100% 100%; 
     }
