@@ -28,3 +28,6 @@
 .video-react .video-react-poster {
     background-color: unset !important;
 }
+.video-react .video-react-big-play-button {
+    display: none !important;
+}
