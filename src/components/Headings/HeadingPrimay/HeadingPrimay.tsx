@@ -1,5 +1,5 @@
 import React from "react";
-import { HeadingPrimayText } from "..";
+import { HeadingPrimayText } from "../../HeadingPrimayText/HeadingPrimayText";
 type Props = {
   title?: string;
   children?: React.ReactNode;
