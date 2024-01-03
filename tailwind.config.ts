@@ -23,7 +23,8 @@ const config: Config = {
         quinary: "#212121"
       },
       fontSize: {
-        "2.5xl": '1.75rem'
+        "2.5xl": '1.75rem',
+        "4.5xl": '2.5rem',
       },
       fontFamily: {
         "GEO703": ['GEO703'],
