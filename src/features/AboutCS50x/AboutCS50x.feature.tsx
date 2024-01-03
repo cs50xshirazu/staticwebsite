@@ -1,9 +1,8 @@
 import {
-  ButtonPrimary,
-  ButtonSecondary,
   HeadingPrimay,
   HeadingSecondary,
   Video,
+  ShirazUAbout,
 } from "@/components";
 import React from "react";
 
@@ -21,18 +20,9 @@ export const AboutCS50x = (props: Props) => {
         دوره را با زبان و فرهنگ خودشان هماهنگ کنند و برگزار کنند.{" "}
       </p>
       <HeadingSecondary />
-      <div className="w-full flex gap-10">
-        <div className="w-1/2">
-          <Video />
-        </div>
-        <div className="w-1/2 flex flex-col gap-7">
-          <ButtonSecondary title="CS50x SHIRAZU چیست؟" />
-          <p className="text-quinary text-2xl font-semibold text-justify">
-            CS50 دوره آموزش مقدماتی برنامه نویسی و مبانی علوم کامپیوتر هاروارد
-            است که هرساله علاوه بر دانشگاه هاروارد و یِل، در سایر نقاط دنیا توسط
-            نمایندگان محلی دارای لایسنس برگزار می‌شود.
-          </p>
-        </div>
+      <div className="w-full grid grid-cols-2 gap-10">
+        <Video />
+        <ShirazUAbout />
       </div>
     </section>
   );

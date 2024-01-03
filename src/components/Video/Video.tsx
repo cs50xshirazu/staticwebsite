@@ -7,9 +7,10 @@ type Props = {};
 
 export const Video = (props: Props) => {
   return (
-    <div className="w-full aspect-video mb-20">
+    <div className="w-full aspect-video mb-20 rounded overflow-hidden">
       <Player
-        autoPlay
+        aspectRatio="16:9"
+        fluid={true}
         src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
         poster="/images/videoPoster.svg">
         <ControlBar autoHide={false} className="my-class" />

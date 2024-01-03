@@ -25,3 +25,6 @@
         border-top: 100px solid #820000;
     }
 }
+.video-react .video-react-poster {
+    background-color: unset !important;
+}
