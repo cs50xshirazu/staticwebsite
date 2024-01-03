@@ -7,7 +7,7 @@ type Props = {};
 
 export const Video = (props: Props) => {
   return (
-    <div className="w-full aspect-video mb-20 rounded overflow-hidden">
+    <div className="w-full aspect-video rounded overflow-hidden">
       <Player
         aspectRatio="16:9"
         fluid={true}
