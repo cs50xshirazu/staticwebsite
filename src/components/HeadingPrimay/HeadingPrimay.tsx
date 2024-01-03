@@ -3,13 +3,24 @@ import { HeadingPrimayText } from "..";
 type Props = {
   title?: string;
   children?: React.ReactNode;
+  className?: string;
 };
 
-export const HeadingPrimay = ({ title, children }: Props) => {
+export const HeadingPrimay = ({ title, children, className }: Props) => {
   return (
-    <div className="w-full min-h-10 bg-headeangImage bg-center bg-cover bg-no-repeat flex justify-center items-center gap-4">
-      {children && children}
-      {title && <HeadingPrimayText isHeading={true} title={title} />}
+    <div className="w-full min-h-10 flex justify-between items-center gap-4">
+      <img src="/images/line.svg" className="w-2/5 h-full rotate-180" alt="" />
+      <div className="w-1/5 flex justify-evenly">
+        {children && children}
+        {title && (
+          <HeadingPrimayText
+            className={className ? className : ""}
+            isHeading={true}
+            title={title}
+          />
+        )}
+      </div>
+      <img src="/images/line.svg" className="w-2/5 h-full" alt="" />
     </div>
   );
 };

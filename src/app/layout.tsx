@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa">
-      <body dir="rtl" className="bg-BodyImage bg-cover bg-center">
+      <body
+        dir="rtl"
+        className="bg-BodyImage bg-cover bg-center font-IranYekan">
         {children}
       </body>
     </html>

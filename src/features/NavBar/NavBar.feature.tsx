@@ -13,7 +13,7 @@ export const NavBar = (props: Props) => {
         <ButtonPrimary title="ثبت نام آنلاین" />
       </div>
       <HeadingPrimay>
-        <HeadingPrimayText isHeading={false} title="ثبت نام" />
+        <HeadingPrimayText isHeading={false} title="Cs50 چیست؟" />
         <HeadingPrimayText isHeading={false} title="دوره ها" />
         <HeadingPrimayText isHeading={false} title="سوالات متداول" />
       </HeadingPrimay>

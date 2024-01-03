@@ -24,6 +24,10 @@ const config: Config = {
       },
       fontSize: {
         "2.5xl": '1.75rem'
+      },
+      fontFamily: {
+        "GEO703": ['GEO703'],
+        'IranYekan': ['IRANYekan', "sans-serif"],
       }
     },
   },
