@@ -19,7 +19,7 @@ const config: Config = {
         primary: "#820000",
         secondary: "#4E6C50",
         tertiary: "#F2DEBA",
-        quaternary: "#FFFBF7",
+        quaternary: "#FAFAFA",
         quinary: "#212121"
       },
       fontSize: {
