@@ -3,6 +3,7 @@ import {
   HeadingSecondary,
   Video,
   ShirazUAbout,
+  CourseFeatures,
 } from "@/components";
 import React from "react";
 
@@ -24,6 +25,7 @@ export const AboutCS50x = (props: Props) => {
         <Video />
         <ShirazUAbout />
       </div>
+      <CourseFeatures />
     </section>
   );
 };
