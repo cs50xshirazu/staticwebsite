@@ -3,6 +3,7 @@ import {
   ButtonSecondary,
   HeadingPrimay,
   HeadingSecondary,
+  Video,
 } from "@/components";
 import React from "react";
 
@@ -21,7 +22,9 @@ export const AboutCS50x = (props: Props) => {
       </p>
       <HeadingSecondary />
       <div className="w-full flex gap-10">
-        <div className="w-1/2">video</div>
+        <div className="w-1/2">
+          <Video />
+        </div>
         <div className="w-1/2 flex flex-col gap-7">
           <ButtonSecondary title="CS50x SHIRAZU چیست؟" />
           <p className="text-quinary text-2xl font-semibold text-justify">
