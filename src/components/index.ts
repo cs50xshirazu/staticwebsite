@@ -6,3 +6,5 @@ export { HeadingSecondary } from './Headings'
 export { ShirazUAbout } from './ShirazUAbout/ShirazUAbout'
 export { CourseFeatures } from './CourseFeatures/CourseFeatures'
 export { AboutTeacherTexts } from './AboutTeacherTexts/AboutTeacherTexts'
+export { Slider } from "./Slider/Slider"
+export { BoxPrimary } from './BoxPrimary/BoxPrimary'

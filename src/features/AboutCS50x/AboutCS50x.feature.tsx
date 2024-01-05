@@ -27,7 +27,7 @@ export const AboutCS50x = (props: Props) => {
       </div>
       <CourseFeatures />
       <HeadingPrimay
-        className="font-IranYekan text-4xl"
+        className="font-IranYekan text-3xl"
         title="ویژگی های دوره ی ما"
       />
       <p className="text-justify p-5 text-quinary text-2xl font-semibold">

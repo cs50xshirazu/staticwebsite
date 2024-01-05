@@ -14,6 +14,9 @@ const config: Config = {
         "ButtonImage": "url('/images/buttonBg.svg')",
         "BodyImage": "url('/images/bodyBg.svg')",
         "headeangImage": "url('/images/headingLine.svg')",
+        "swiperBtnPrev": "url('/icons/swiperButtonPrev.svg')",
+        "swiperBtnNext": "url('/icons/swiperButtonNext.svg')"
+
       },
       colors: {
         primary: "#820000",

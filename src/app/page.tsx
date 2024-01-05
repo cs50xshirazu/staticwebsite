@@ -1,4 +1,4 @@
-import { AboutCS50x, AboutTeacher, Header, NavBar } from "@/features";
+import { AboutCS50x, AboutTeacher, Courses, Header, NavBar } from "@/features";
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <Header />
       <AboutCS50x />
       <AboutTeacher />
+      <Courses />
     </>
   );
 }
