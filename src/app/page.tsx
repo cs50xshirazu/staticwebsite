@@ -1,4 +1,11 @@
-import { AboutCS50x, AboutTeacher, Courses, Header, NavBar } from "@/features";
+import {
+  AboutCS50x,
+  AboutTeacher,
+  Courses,
+  Header,
+  ImageSection,
+  NavBar,
+} from "@/features";
 
 export default function Home() {
   return (
@@ -8,6 +15,7 @@ export default function Home() {
       <AboutCS50x />
       <AboutTeacher />
       <Courses />
+      <ImageSection />
     </>
   );
 }
