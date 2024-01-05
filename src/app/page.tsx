@@ -5,6 +5,7 @@ import {
   Header,
   ImageSection,
   NavBar,
+  TeamAndSponsers,
 } from "@/features";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutTeacher />
       <Courses />
       <ImageSection />
+      <TeamAndSponsers />
     </>
   );
 }
