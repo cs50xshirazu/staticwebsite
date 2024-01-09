@@ -5,7 +5,7 @@ export { ShirazUAbout } from './ShirazUAbout/ShirazUAbout'
 export { AboutTeacherTexts } from './AboutTeacherTexts/AboutTeacherTexts'
 export { Slider } from "./Slider/Slider"
 export { CustomAccordion } from "./Accordion/Accordion"
-
+export { SuitableBox } from "./SuitableBox/SuitableBox"
 // utils 
 export { HeadingPrimay, HeadingSecondary } from './Headings'
 export { ButtonPrimary, ButtonSecondary } from "./Buttons"
