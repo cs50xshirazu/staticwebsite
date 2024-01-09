@@ -24,7 +24,7 @@ export const AboutCS50x = (props: Props) => {
         دوره را با زبان و فرهنگ خودشان هماهنگ کنند و برگزار کنند.
       </p>
       <HeadingSecondary />
-      <div className="w-full grid grid-cols-2 gap-10">
+      <div className="w-full grid grid-cols-2 gap-10 lg:grid-rows-2 lg:grid-cols-1 lg:gap-0">
         <Video />
         <ShirazUAbout />
       </div>

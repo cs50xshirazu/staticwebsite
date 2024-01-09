@@ -5,7 +5,7 @@
 
 @layer utilities {
     .p-page {
-        @apply px-28 xl:px-10
+        @apply px-28 xl:px-10 md:!px-2
     }
     .bg-size-100 {
         background-size: 100% 100%; 
