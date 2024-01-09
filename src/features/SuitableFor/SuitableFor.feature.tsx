@@ -5,7 +5,7 @@ type Props = {};
 
 const SuitableFor = (props: Props) => {
   return (
-    <section className="w-full p-page grid grid-cols-5 gap-10 lg:grid-cols-1 lg:grid-rows-2 lg:place-items-stretch">
+    <section className="w-full p-page grid grid-cols-5 gap-10 lg:grid-cols-1 lg:place-items-center">
       <div className="h-full flex flex-col gap-5 col-span-3 justify-evenly">
         <SuitableBox
           title="این دوره برای چه کسانی مناسب است؟"

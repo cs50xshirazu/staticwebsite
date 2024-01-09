@@ -15,6 +15,7 @@ type Props = {
   items: ICourses[] | ITeam[];
   slidesPerViewon700: number;
   slidesPerViewon1200: number;
+  isTeam: boolean;
 };
 const Slider = ({
   items,
@@ -22,6 +23,7 @@ const Slider = ({
   spaceBetween,
   slidesPerViewon700,
   slidesPerViewon1200,
+  isTeam,
 }: Props) => {
   return (
     <div className="w-full overflow-hidden">
@@ -46,7 +48,7 @@ const Slider = ({
         }}>
         {items.map((item) => (
           <SwiperSlide className="!flex justify-center items-center !px-10">
-            <BoxPrimary {...item} />
+            <BoxPrimary {...item} isTeam={isTeam} />
           </SwiperSlide>
         ))}
       </Swiper>

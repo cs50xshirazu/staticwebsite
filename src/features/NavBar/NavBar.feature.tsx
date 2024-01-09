@@ -6,7 +6,7 @@ type Props = {};
 
 export const NavBar = (props: Props) => {
   return (
-    <nav className="w-full h-32 px-28 2xl:px-10 py-2.5 flex justify-center items-center flex-col">
+    <nav className="w-full h-32 px-28 2xl:px-10 md:!px-2 py-2.5 flex justify-center items-center flex-col">
       <div className="w-full h-fit flex justify-between items-center">
         <ButtonPrimary title="ورود به پنل کاربری" />
         <Image src={cs50ShirazU} alt="LOGO" className="h-20 w-14" />

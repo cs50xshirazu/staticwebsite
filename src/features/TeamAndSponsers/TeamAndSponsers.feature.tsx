@@ -50,6 +50,7 @@ const TeamAndSponsers = (props: Props) => {
     <section className="w-full p-page mt-12 flex flex-col gap-20 ">
       <HeadingPrimay title="همکاران و اسپانسرها" />
       <Slider
+        isTeam={true}
         slidesPerView={1}
         slidesPerViewon700={3}
         slidesPerViewon1200={4}

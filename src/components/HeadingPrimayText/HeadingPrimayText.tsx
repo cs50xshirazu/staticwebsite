@@ -10,7 +10,7 @@ export const HeadingPrimayText = (props: Props) => {
   if (props.isHeading) {
     return (
       <h2
-        className={`text-quinary text-3xl xl:text-2xl whitespace-nowrap font-extrabold ${
+        className={`text-quinary text-3xl xl:text-2xl md:!text-lg whitespace-nowrap font-extrabold ${
           props.className ? props.className : ""
         }`}>
         {props.title}
@@ -18,7 +18,7 @@ export const HeadingPrimayText = (props: Props) => {
     );
   } else {
     return (
-      <span className="text-quinary text-xl xl:text-base xl:font-bold whitespace-nowrap  font-extrabold">
+      <span className="text-quinary text-xl xl:text-base md:!text-xs xl:font-bold whitespace-nowrap  font-extrabold">
         {props.title}
       </span>
     );

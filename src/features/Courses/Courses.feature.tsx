@@ -1,8 +1,6 @@
 import { HeadingPrimay, Slider } from "@/components";
 import { ICourses } from "@/interfaces";
 import React from "react";
-import { Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 type Props = {};
 const courses: ICourses[] = [
@@ -37,6 +35,7 @@ const Courses = (props: Props) => {
     <section className="p-page py-12 flex flex-col gap-10">
       <HeadingPrimay title="دوره ها" className="font-IranYekan text-3xl" />
       <Slider
+        isTeam={false}
         items={courses}
         slidesPerView={1}
         slidesPerViewon700={2}
