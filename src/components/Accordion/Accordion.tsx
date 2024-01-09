@@ -49,13 +49,16 @@ export const CustomAccordion = (props: Props) => {
           key={i}
           aria-label={que.title}
           title={que.title}
-          indicator={<img src="/icons/indicator.svg" />}
+          indicator={<img src="/icons/indicator.svg" className="md:size-5" />}
           className="!p-0 overflow-hidden font-medium !rounded-none shadow-primary"
-          startContent={<img src="/icons/accordionStart.svg" alt="" />}
+          startContent={
+            <img src="/icons/accordionStart.svg" alt="" className="md:size-5" />
+          }
           classNames={{
-            content: "accordion-content px-10 text-center text-2xl font-normal",
-            heading: "!bg-primary w-full px-5  shadow-primary",
-            title: "text-white text-2xl font-medium ",
+            content:
+              "accordion-content px-10 text-center text-2xl md:text-base font-normal",
+            heading: "!bg-primary w-full px-5 shadow-primary",
+            title: "text-white text-2xl md:text-base font-medium ",
           }}>
           {que.content}
         </AccordionItem>
