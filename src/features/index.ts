@@ -5,3 +5,5 @@ export { AboutTeacher } from "./AboutTeacher/AboutTeacher.feature"
 export { Courses } from "./Courses/Courses.feature"
 export { ImageSection } from './ImageSection/ImageSection.feature'
 export { TeamAndSponsers } from "./TeamAndSponsers/TeamAndSponsers.feature"
+export { Faq } from "./FAQ/FAQ.feature"
+export { SuitableFor } from "./SuitableFor/SuitableFor.feature"

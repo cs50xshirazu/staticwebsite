@@ -2,9 +2,11 @@ import {
   AboutCS50x,
   AboutTeacher,
   Courses,
+  Faq,
   Header,
   ImageSection,
   NavBar,
+  SuitableFor,
   TeamAndSponsers,
 } from "@/features";
 
@@ -18,6 +20,8 @@ export default function Home() {
       <Courses />
       <ImageSection />
       <TeamAndSponsers />
+      <SuitableFor />
+      <Faq />
     </>
   );
 }

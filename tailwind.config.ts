@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { nextui } from "@nextui-org/react";
 
 const config: Config = {
   content: [
@@ -6,7 +7,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/features/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
@@ -32,10 +33,13 @@ const config: Config = {
       fontFamily: {
         "GEO703": ['GEO703'],
         'IranYekan': ['IRANYekan', "sans-serif"],
+      },
+      boxShadow: {
+        primary: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
       }
     },
   },
 
-  plugins: []
+  plugins: [nextui()]
 }
 export default config
