@@ -36,7 +36,15 @@ const config: Config = {
       },
       boxShadow: {
         primary: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
-      }
+      },
+      screens: {
+        "2xl": { max: "1536px" },
+        xl: { max: "1279px" },
+        lg: { max: "1023px" },
+        md: { max: "767px" },
+        sm: { max: "639px" },
+      },
+
     },
   },
 

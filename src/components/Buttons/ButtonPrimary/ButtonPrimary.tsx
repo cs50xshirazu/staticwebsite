@@ -4,7 +4,7 @@ import React from "react";
 type Props = {
   title: string;
   className?: string;
-} & IClickableElem;
+} & Partial<IClickableElem>;
 
 export const ButtonPrimary = (props: Props) => {
   return (

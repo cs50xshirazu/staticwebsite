@@ -8,9 +8,9 @@ type Props = {
 
 export const HeadingPrimay = ({ title, children, className }: Props) => {
   return (
-    <div className="w-full min-h-10 flex justify-between items-center gap-4">
-      <img src="/images/line.svg" className="w-2/5 h-full " alt="" />
-      <div className="w-1/5 flex justify-center gap-2">
+    <div className="w-full min-h-10 grid grid-cols-3 gap-4 place-items-center">
+      <img src="/images/line.svg" className="w-full h-full" alt="" />
+      <div className="w-full flex justify-center gap-2">
         {children && children}
         {title && (
           <HeadingPrimayText
@@ -20,7 +20,7 @@ export const HeadingPrimay = ({ title, children, className }: Props) => {
           />
         )}
       </div>
-      <img src="/images/line.svg" className="w-2/5 h-full rotate-180" alt="" />
+      <img src="/images/line.svg" className="w-full h-full rotate-180" alt="" />
     </div>
   );
 };
