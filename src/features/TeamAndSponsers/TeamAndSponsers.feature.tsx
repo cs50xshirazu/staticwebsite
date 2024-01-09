@@ -49,7 +49,13 @@ const TeamAndSponsers = (props: Props) => {
   return (
     <section className="w-full p-page mt-12 flex flex-col gap-20 ">
       <HeadingPrimay title="همکاران و اسپانسرها" />
-      <Slider slidesPerView={4} spaceBetween={50} items={teamMembers} />
+      <Slider
+        slidesPerView={1}
+        slidesPerViewon700={3}
+        slidesPerViewon1200={4}
+        spaceBetween={50}
+        items={teamMembers}
+      />
       <HeadingSecondary />
     </section>
   );

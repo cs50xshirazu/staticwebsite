@@ -13,8 +13,16 @@ type Props = {
   slidesPerView: number;
   spaceBetween: number;
   items: ICourses[] | ITeam[];
+  slidesPerViewon700: number;
+  slidesPerViewon1200: number;
 };
-const Slider = ({ items, slidesPerView, spaceBetween }: Props) => {
+const Slider = ({
+  items,
+  slidesPerView,
+  spaceBetween,
+  slidesPerViewon700,
+  slidesPerViewon1200,
+}: Props) => {
   return (
     <div className="w-full overflow-hidden">
       <Swiper
@@ -22,7 +30,15 @@ const Slider = ({ items, slidesPerView, spaceBetween }: Props) => {
         modules={[Navigation]}
         slidesPerView={slidesPerView}
         spaceBetween={spaceBetween}
-        className="mySwiper !px-10">
+        className="mySwiper !px-10"
+        breakpoints={{
+          1200: {
+            slidesPerView: slidesPerViewon1200,
+          },
+          700: {
+            slidesPerView: slidesPerViewon700,
+          },
+        }}>
         {items.map((item) => (
           <SwiperSlide className="!flex justify-center items-center !px-10">
             <BoxPrimary {...item} />

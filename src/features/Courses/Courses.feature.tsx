@@ -36,7 +36,13 @@ const Courses = (props: Props) => {
   return (
     <section className="p-page py-12 flex flex-col gap-10">
       <HeadingPrimay title="دوره ها" className="font-IranYekan text-3xl" />
-      <Slider items={courses} slidesPerView={3} spaceBetween={100} />
+      <Slider
+        items={courses}
+        slidesPerView={1}
+        slidesPerViewon700={2}
+        slidesPerViewon1200={3}
+        spaceBetween={100}
+      />
     </section>
   );
 };
