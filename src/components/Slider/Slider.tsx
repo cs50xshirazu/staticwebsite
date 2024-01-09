@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BoxPrimary } from "../";
 import { ICourses } from "@/interfaces";
@@ -27,10 +27,15 @@ const Slider = ({
     <div className="w-full overflow-hidden">
       <Swiper
         navigation={true}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         slidesPerView={slidesPerView}
         spaceBetween={spaceBetween}
         className="mySwiper !px-10"
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: true,
+        }}
+        loop={true}
         breakpoints={{
           1200: {
             slidesPerView: slidesPerViewon1200,
