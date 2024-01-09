@@ -7,3 +7,4 @@ export { ImageSection } from './ImageSection/ImageSection.feature'
 export { TeamAndSponsers } from "./TeamAndSponsers/TeamAndSponsers.feature"
 export { Faq } from "./FAQ/FAQ.feature"
 export { SuitableFor } from "./SuitableFor/SuitableFor.feature"
+export { Footer } from "./Footer/Footer.feature"

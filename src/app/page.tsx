@@ -3,6 +3,7 @@ import {
   AboutTeacher,
   Courses,
   Faq,
+  Footer,
   Header,
   ImageSection,
   NavBar,
@@ -22,6 +23,7 @@ export default function Home() {
       <TeamAndSponsers />
       <SuitableFor />
       <Faq />
+      <Footer />
     </>
   );
 }
