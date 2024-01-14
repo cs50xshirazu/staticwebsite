@@ -32,7 +32,7 @@ const courses: ICourses[] = [
 ];
 const Courses = (props: Props) => {
   return (
-    <section className="p-page py-12 flex flex-col gap-10">
+    <section id="courses" className="p-page py-12 flex flex-col gap-10">
       <HeadingPrimay title="دوره ها" className="font-IranYekan text-3xl" />
       <Slider
         isTeam={false}

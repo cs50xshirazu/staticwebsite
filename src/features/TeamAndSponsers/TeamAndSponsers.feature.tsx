@@ -52,7 +52,7 @@ const TeamAndSponsers = (props: Props) => {
       <Slider
         isTeam={true}
         slidesPerView={1}
-        slidesPerViewon700={3}
+        slidesPerViewon700={2}
         slidesPerViewon1200={4}
         spaceBetween={50}
         items={teamMembers}

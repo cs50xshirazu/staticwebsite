@@ -11,8 +11,8 @@ const FooterBox = (props: Props) => {
     <div className="w-full flex flex-col">
       <h5 className="text-2xl font-bold md:text-lg">{title}</h5>
       <ul className="mt-10">
-        {items.map((item) => (
-          <li className="mt-4">
+        {items.map((item, i) => (
+          <li className="mt-4" key={item.name + i}>
             <a
               href={item.link}
               className="text-2xl md:text-lg font-normal flex gap-2 items-center">

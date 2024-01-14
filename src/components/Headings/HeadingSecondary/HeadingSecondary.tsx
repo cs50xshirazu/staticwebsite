@@ -7,7 +7,7 @@ export const HeadingSecondary = (props: Props) => {
     <div className="w-full h-10">
       <img
         src="/images/HeadingSecondary.svg"
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover lg:object-contain"
         alt=""
       />
     </div>

@@ -56,7 +56,7 @@ export const CustomAccordion = (props: Props) => {
           }
           classNames={{
             content:
-              "accordion-content px-10 text-center text-2xl md:text-base font-normal",
+              "accordion-content px-10 md:px-3 text-center text-2xl md:text-sm font-normal",
             heading: "!bg-primary w-full px-5 shadow-primary",
             title: "text-white text-2xl md:text-base font-medium ",
           }}>

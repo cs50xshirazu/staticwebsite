@@ -10,7 +10,7 @@ export const HeadingPrimay = ({ title, children, className }: Props) => {
   return (
     <div className="w-full min-h-10 grid grid-cols-3 gap-4 place-items-center">
       <img src="/images/line.svg" className="w-full h-full" alt="" />
-      <div className="w-full flex justify-center gap-2">
+      <div className="w-full flex justify-center gap-5">
         {children && children}
         {title && (
           <HeadingPrimayText

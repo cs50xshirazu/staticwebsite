@@ -11,7 +11,9 @@ type Props = {};
 
 export const AboutCS50x = (props: Props) => {
   return (
-    <section className="w-full flex flex-col gap-6 mt-14 md:mt-5 p-page">
+    <section
+      id="cs50"
+      className="w-full flex flex-col gap-6 mt-14 md:mt-5 p-page">
       <HeadingPrimay
         className="font-GEO703 text-4.5xl lg:text-3xl"
         title="CS50x SHIRAZU"
@@ -24,7 +26,7 @@ export const AboutCS50x = (props: Props) => {
         دوره را با زبان و فرهنگ خودشان هماهنگ کنند و برگزار کنند.
       </p>
       <HeadingSecondary />
-      <div className="w-full grid grid-cols-2 gap-10 lg:grid-rows-2 lg:grid-cols-1 lg:gap-0">
+      <div className="w-full grid grid-cols-2 gap-10 lg:grid-cols-1 lg:gap-0 px-5">
         <Video />
         <ShirazUAbout />
       </div>

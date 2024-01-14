@@ -21,8 +21,10 @@ const SuitableBox = (props: Props) => {
         </h3>
       </div>
       <ul className="mt-2">
-        {items.map((item) => (
-          <li className="text-xl md:text-base font-semibold">{item}</li>
+        {items.map((item, i) => (
+          <li key={item + i} className="text-xl md:text-base font-semibold">
+            {item}
+          </li>
         ))}
       </ul>
     </div>

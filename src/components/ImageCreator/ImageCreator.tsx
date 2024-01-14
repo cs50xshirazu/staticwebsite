@@ -22,7 +22,7 @@ const ImageCreator = (props: Props) => {
             ? "./images/imageFrame.svg"
             : "./images/imageFrame2.svg"
         }
-        className="absolute w-full h-full inset-0 object-fill"
+        className="absolute w-11/12 h-[90%] inset-1/2 translate-x-1/2 -translate-y-1/2 object-fill"
         alt=""
       />
     </div>

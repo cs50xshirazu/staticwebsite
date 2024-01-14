@@ -46,8 +46,10 @@ const Slider = ({
             slidesPerView: slidesPerViewon700,
           },
         }}>
-        {items.map((item) => (
-          <SwiperSlide className="!flex justify-center items-center !px-10">
+        {items.map((item, i) => (
+          <SwiperSlide
+            key={item.name + i}
+            className="!flex justify-center items-center !px-10">
             <BoxPrimary {...item} isTeam={isTeam} />
           </SwiperSlide>
         ))}
