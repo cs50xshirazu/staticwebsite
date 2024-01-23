@@ -12,7 +12,7 @@ import {
   SuitableFor,
   TeamAndSponsers,
 } from "@/features";
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Loading from "./loading";
 
 export default function Home() {

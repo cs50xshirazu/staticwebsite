@@ -20,11 +20,11 @@ export const CourseFeatures = (props: Props) => {
           title="برگزاری office hours در هر هفته"
         />
         <CourseFeaturesItem
-          icon="/icons/support.svg"
+          icon="/icons/certificate.svg"
           title="ارائه گواهی حضور از دانشگاه شیراز"
         />
         <CourseFeaturesItem
-          icon="/icons/support.svg"
+          icon="/icons/tajrobe.svg"
           title="تجربه یادگیری علوم کامپیوتر به سبک دانشگاه هاروارد"
         />
       </div>
