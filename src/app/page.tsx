@@ -18,7 +18,9 @@ import Loading from "./loading";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    setIsLoading(false);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 5000);
   }, []);
   return (
     <>
