@@ -29,7 +29,10 @@ const SuitableFor = (props: Props) => {
         />
       </div>
       <div className="w-full aspect-square col-span-2 md:mx-auto -order-1 md:w-11/12">
-        <ImageCreator varient="secondary" imageSrc="/images/takhtEjamsid.svg" />
+        <ImageCreator
+          varient="secondary"
+          imageSrc="/images/sepehrCertidicate.png"
+        />
       </div>
     </section>
   );
