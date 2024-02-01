@@ -66,7 +66,7 @@ const HamMenu = (props: Props) => {
         </div>
         <div onClick={onHamToggle} className="flex flex-col gap-4">
           <HeadingPrimayText
-            link="#cs50"
+            link="#whatIsCs50"
             isHeading={false}
             title="Cs50 چیست؟"
           />

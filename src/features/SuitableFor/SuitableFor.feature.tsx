@@ -5,7 +5,7 @@ type Props = {};
 
 const SuitableFor = (props: Props) => {
   return (
-    <section className="w-full p-page grid grid-cols-5 gap-10 md:grid-cols-1 md:place-items-center md:gap-x-0">
+    <section className="w-full p-page grid grid-cols-5 gap-10 md:grid-cols-1 place-items-center md:gap-x-0">
       <div className="h-full flex flex-col gap-5 col-span-3 justify-evenly md:w-11/12">
         <SuitableBox
           title="این دوره برای چه کسانی مناسب است؟"
@@ -28,11 +28,12 @@ const SuitableFor = (props: Props) => {
           isSutable={false}
         />
       </div>
-      <div className="w-full aspect-square col-span-2 md:mx-auto -order-1 md:w-11/12">
-        <ImageCreator
+      <div className="w-full aspect-square col-span-2 md:mx-auto -order-1 md:w-11/12 flex justify-center items-center">
+        <img src="/images/sepehrCertidicate.png" className="w-full" alt="" />
+        {/* <ImageCreator
           varient="secondary"
           imageSrc="/images/sepehrCertidicate.png"
-        />
+        /> */}
       </div>
     </section>
   );

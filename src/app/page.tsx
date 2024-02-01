@@ -16,12 +16,12 @@ import { useEffect, useState } from "react";
 import Loading from "./loading";
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
-  }, []);
+  const [isLoading, setIsLoading] = useState(false);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 5000);
+  // }, []);
   return (
     <>
       {isLoading ? (

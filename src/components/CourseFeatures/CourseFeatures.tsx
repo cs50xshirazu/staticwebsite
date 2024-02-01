@@ -6,7 +6,7 @@ type Props = {};
 export const CourseFeatures = (props: Props) => {
   return (
     <div className="w-full mt-8 flex flex-col gap-10">
-      <h2 className="text-black text-2xl font-semibold text-center lg:text-justify px-5">
+      <h2 className="text-black text-2xl font-semibold sm:font-medium sm:text-xl text-center lg:text-justify px-5">
         در این دوره به سبکی متفاوت و جذاب هنر برنامه نویسی را از پایه، اصولی و
         مطابق استانداردهای دانشگاه هاروارد فرا خواهید گرفت.
       </h2>

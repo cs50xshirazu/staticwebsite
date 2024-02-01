@@ -21,7 +21,7 @@ export const HeadingPrimayText = (props: Props) => {
     return (
       <a
         href={props.link}
-        className="text-quinary text-xl xl:text-base md:!text-base xl:font-bold whitespace-nowrap  font-extrabold">
+        className="text-quinary text-xl xl:text-base md:!text-base cursor-pointer xl:font-bold whitespace-nowrap  font-extrabold">
         {props.title}
       </a>
     );
