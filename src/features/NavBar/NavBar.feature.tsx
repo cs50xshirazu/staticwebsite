@@ -1,7 +1,7 @@
 import { ButtonPrimary, HeadingPrimay, HeadingPrimayText } from "@/components";
 import Image from "next/image";
 import React, { useState } from "react";
-import cs50ShirazU from "../../../public/images/cs50ShirazU.svg";
+import cs50ShirazU from "../../../public/images/cs50ShirazU.png";
 import { HamMenu } from "..";
 type Props = {};
 

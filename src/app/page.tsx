@@ -34,7 +34,7 @@ export default function Home() {
           <AboutTeacher />
           <Courses />
           <ImageSection />
-          <TeamAndSponsers />
+          {/* <TeamAndSponsers /> */}
           <SuitableFor />
           <Faq />
           <Footer />
