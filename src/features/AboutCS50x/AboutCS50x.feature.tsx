@@ -16,7 +16,7 @@ export const AboutCS50x = (props: Props) => {
       className="w-full flex flex-col gap-6 mt-14 md:mt-5 p-page">
       <HeadingPrimay
         className="font-GEO703 text-4.5xl lg:text-3xl"
-        title="CS50x SHIRAZU"
+        title="CS50x Shiraz"
       />
       <p className="text-justify p-5 text-quinary text-2xl font-semibold lg:text-lg">
         CS50 دوره آموزش مبانی علوم کامپیوتر و آشنایی با منطق و الفبای برنامه

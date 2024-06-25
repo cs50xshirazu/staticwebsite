@@ -6,7 +6,7 @@ type Props = {};
 export const ShirazUAbout = (props: Props) => {
   return (
     <div className="w-full flex flex-col gap-7 lg:items-center -order-1 ">
-      <ButtonSecondary title="CS50x SHIRAZU چیست؟" />
+      <ButtonSecondary title="CS50x Shiraz چیست؟" />
       <p className="text-quinary text-2xl lg:text-lg font-semibold text-justify">
         CS50 دوره آموزش مقدماتی برنامه نویسی و مبانی علوم کامپیوتر هاروارد است
         که هرساله علاوه بر دانشگاه هاروارد و یِل، در سایر نقاط دنیا توسط

@@ -50,7 +50,7 @@ const Footer = (props: Props) => {
               fill="#F2DEBA"
             />
           </svg>
-          2023 تمامی حقوق برای Cs50xShirazu و دانشگاه شیراز محفوظ می باشد.
+          2024 تمامی حقوق برای CS50x Shiraz و دانشگاه شیراز محفوظ می باشد.
         </div>
         <div className="flex gap-3">
           <img src="./icons/twitter.svg" className="size-4" alt="" />
