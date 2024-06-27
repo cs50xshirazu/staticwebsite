@@ -13,25 +13,14 @@ runs:
       with:
         version: 8
 
-    - name: Get pnpm store directory
-      shell: bash
-      id: pnpm-cache
-      run: |
-        echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
-
     - name: Cache dependencies ⚡
+      id: cache_dependencies
       uses: actions/cache@v3
       with:
-        path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/package.json') }}
-        restore-keys: |
-          ${{ runner.os }}-pnpm-store-
+        path: ~/.pnpm-store
+        key: pnpm-${{ hashFiles('pnpm-lock.yaml') }}
 
     - name: Install dependencies 🔧
       shell: bash
-      run: |
-        if [ -f pnpm-lock.yaml ]; then
-          pnpm install --frozen-lockfile
-        else
-          pnpm install
-        fi
+      if: steps.cache_dependencies.outputs.cache-hit != 'true'
+      run: pnpm install --no-frozen-lockfile
