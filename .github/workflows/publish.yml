@@ -29,6 +29,9 @@ jobs:
         with:
           static_site_generator: next
 
+      - name: install package with pnpm 📦
+        run: pnpm install
+
       - name: Build with Next.js 🏗️
         run: pnpm build
 
