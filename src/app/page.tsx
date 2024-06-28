@@ -14,6 +14,7 @@ import {
 } from "@/features";
 import { useEffect, useState } from "react";
 import Loading from "./loading";
+import { NextUIProvider } from "@nextui-org/react";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,7 +28,7 @@ export default function Home() {
       {isLoading ? (
         <Loading />
       ) : (
-        <>
+        <NextUIProvider>
           <NavBar />
           <Header />
           <AboutCS50x />
@@ -38,7 +39,7 @@ export default function Home() {
           <SuitableFor />
           <Faq />
           <Footer />
-        </>
+        </NextUIProvider>
       )}
     </>
   );

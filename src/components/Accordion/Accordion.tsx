@@ -58,7 +58,10 @@ export const CustomAccordion = (props: Props) => {
             content:
               "accordion-content px-10 md:px-3 text-center text-2xl md:text-sm font-normal",
             heading: "!bg-primary w-full px-5 shadow-primary",
-            title: "text-white text-2xl md:text-base font-medium ",
+            title:
+              "text-white text-2xl md:text-base text-right w-full font-medium ",
+            titleWrapper:
+              "flex py-2 w-full h-full gap-3 items-center  tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 transition-opacity",
           }}>
           {que.content}
         </AccordionItem>
