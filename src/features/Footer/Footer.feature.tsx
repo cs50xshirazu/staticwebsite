@@ -16,22 +16,22 @@ const Footer = (props: Props) => {
         <FooterBox
           title="لینک های مفید:"
           items={[
-            { link: "", name: "Cs50" },
-            { link: "", name: "Tailwind CSS" },
+            { link: "https://cs50.harvard.edu", name: "Cs50" },
+            { link: "https://shirazu.ac.ir", name: "دانشگاه شیراز" },
           ]}
         />
         <FooterBox
           title="ما را در شبکه های اجتماعی دنبال کنید:"
           items={[
             {
-              link: "",
-              name: "Github",
-              icon: <img src="./icons/github.svg" />,
+              link: "https://instagram.com/cs50xshirazu",
+              name: "اینستاگرام",
+              // icon: <img src="./icons/github.svg" />,
             },
             {
-              link: "",
-              name: "Discord",
-              icon: <img src="./icons/discord.svg" />,
+              link: "https://t.me/cs50xshirazu",
+              name: "تلگرام",
+              // icon: <img src="./icons/discord.svg" />,
             },
           ]}
         />
@@ -50,7 +50,7 @@ const Footer = (props: Props) => {
               fill="#F2DEBA"
             />
           </svg>
-          2024 تمامی حقوق برای CS50x Shiraz و دانشگاه شیراز محفوظ می باشد.
+          2023-2024 تمامی حقوق برای Cs50xShiraz و دانشگاه شیراز محفوظ می باشد.
         </div>
         <div className="flex gap-3">
           <img src="./icons/twitter.svg" className="size-4" alt="" />

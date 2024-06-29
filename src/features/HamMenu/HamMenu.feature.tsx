@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import cs50ShirazU from "../../../public/images/cs50ShirazU.png";
 import {
   ButtonPrimary,
   HeadingPrimayText,
@@ -24,7 +23,7 @@ const HamMenu = (props: Props) => {
     <>
       <nav
         className={`w-full h-20 px-28 2xl:px-10 md:!px-4 py-2.5 md:flex justify-between items-center hidden sticky z-20 bg-BodyImage top-0 right-0`}>
-        <Image src={cs50ShirazU} alt="LOGO" className="h-14 w-10" />
+        <img src="/images/logo.png" alt="LOGO" className="h-14 w-10" />
         <svg
           className="ham hamRotate ham1"
           viewBox="0 0 100 100"
@@ -65,23 +64,23 @@ const HamMenu = (props: Props) => {
           </svg>
         </div>
         <div onClick={onHamToggle} className="flex flex-col gap-4">
-          <HeadingPrimayText
-            link="#whatIsCs50"
+        <HeadingPrimayText
             isHeading={false}
+            link="#whatIsCs50"
             title="Cs50 چیست؟"
           />
           <HeadingPrimayText
-            link="#courses"
             isHeading={false}
-            title="دوره ها"
+            link="#team"
+            title="تیم ما"
           />
           <HeadingPrimayText
-            link="#faq"
             isHeading={false}
+            link="#faq"
             title="سوالات متداول"
           />
-          <ButtonPrimary title="ورود به پنل کاربری" />
-          <ButtonPrimary title="ثبت نام آنلاین" />
+          <ButtonPrimary title="ورود به پنل کاربری" onClick={() =>location.href="https://panel.cs50xshirazu.ir"} />
+          <ButtonPrimary title="ثبت نام آنلاین" onClick={() =>window.open('https://cs50xshirazu.ir','_blank')} />
         </div>
       </div>
     </>

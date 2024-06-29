@@ -18,7 +18,7 @@ const questions: { title: string; content: string }[] = [
   {
     title: "چگونه سرتیفیکیت هاروارد را دریافت کنیم؟",
     content:
-      "برای هر یک از مدارک یاد شده دانشجویان دوره باید چند مجموعه سوال را پشت سر گذارند. در تمامی این مجموعه سوالات باید نمره ی بالای 70 کسب شود. البته جای نگرانی نیست هر چند بار که بخواهید میتوانید تمرینات را آپلود کنید تا نمره ی کافی را کسب کنید. همچنین پس از پایان جلسه ی آخر یک پروژه ی پایانی نیز باید تحویل دهند تا موفق به دریافت سرتیفیکیت رسمی از هاروارد شوند. به لحاظ زمانی نیز تا پایان سال جاری میلادی یعنی تا 10 دی 1402 برای آپلود تمرین ها زمان دارید!",
+      "برای هر یک از مدارک یاد شده دانشجویان دوره باید چند مجموعه سوال را پشت سر گذارند. در تمامی این مجموعه سوالات باید نمره ی بالای 70 کسب شود. البته جای نگرانی نیست هر چند بار که بخواهید میتوانید تمرینات را آپلود کنید تا نمره ی کافی را کسب کنید. همچنین پس از پایان جلسه ی آخر یک پروژه ی پایانی نیز باید تحویل دهند تا موفق به دریافت سرتیفیکیت رسمی از هاروارد شوند. به لحاظ زمانی نیز تا پایان سال جاری میلادی یعنی تا 10 دی 1403 برای آپلود تمرین ها زمان دارید!",
   },
   {
     title: "سرتیفیکیت چه اعتباری داره؟",
@@ -58,10 +58,7 @@ export const CustomAccordion = (props: Props) => {
             content:
               "accordion-content px-10 md:px-3 text-center text-2xl md:text-sm font-normal",
             heading: "!bg-primary w-full px-5 shadow-primary",
-            title:
-              "text-white text-2xl md:text-base text-right w-full font-medium ",
-            titleWrapper:
-              "flex py-2 w-full h-full gap-3 items-center  tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 transition-opacity",
+            title: "text-white text-2xl md:text-base font-medium ",
           }}>
           {que.content}
         </AccordionItem>

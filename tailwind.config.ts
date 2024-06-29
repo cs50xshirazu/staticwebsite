@@ -7,13 +7,13 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/features/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
       backgroundImage: {
         "ButtonImage": "url('/images/buttonBg.svg')",
-        "BodyImage": "url('/images/bodyBg.png')",
+        "BodyImage": "url('/images/image_50.png')",
         "headeangImage": "url('/images/headingLine.svg')",
         "swiperBtnPrev": "url('/icons/swiperButtonPrev.svg')",
         "swiperBtnNext": "url('/icons/swiperButtonNext.svg')"

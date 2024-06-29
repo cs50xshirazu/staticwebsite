@@ -2,62 +2,49 @@ import { HeadingPrimay, HeadingSecondary, Slider } from "@/components";
 import { ITeam } from "@/interfaces";
 import React from "react";
 
-type Props = {};
-const teamMembers: ITeam[] = [
+type Props = {
+  renderSecondary: boolean;
+};
+export const teamMembers: ITeam[] = [
   {
-    name: "آقای طباطبایی",
-    title: "برنامه نویس تیم",
-    imageSrc: "/images/teamImg.png",
+    name: "محمدحسین طباطبائی فرد",
+    title: "مدرس و بنیان گذار",
+    imageSrc: "/images/tabatabaei.jpg",
   },
   {
-    name: "آقای طباطبایی",
-    title: "برنامه نویس تیم",
-    imageSrc: "/images/teamImg.png",
+    name: "عباس داورپناه",
+    title: "مدیر تیم اجرایی",
+    imageSrc: "/images/abbas.jpg",
   },
   {
-    name: "آقای طباطبایی",
-    title: "برنامه نویس تیم",
-    imageSrc: "/images/teamImg.png",
+    name: "علی رودکی",
+    title: "مدیر تیم علمی",
+    imageSrc: "/images/ali.jpeg",
   },
   {
-    name: "آقای طباطبایی",
-    title: "برنامه نویس تیم",
-    imageSrc: "/images/teamImg.png",
+    name: "سپهر ذکاوت",
+    title: "مدیر تیم فنی",
+    imageSrc: "/images/sepehr.jpg",
   },
   {
-    name: "آقای طباطبایی",
-    title: "برنامه نویس تیم",
-    imageSrc: "/images/teamImg.png",
-  },
-  {
-    name: "آقای طباطبایی",
-    title: "برنامه نویس تیم",
-    imageSrc: "/images/teamImg.png",
-  },
-  {
-    name: "آقای طباطبایی",
-    title: "برنامه نویس تیم",
-    imageSrc: "/images/teamImg.png",
-  },
-  {
-    name: "آقای طباطبایی",
-    title: "برنامه نویس تیم",
-    imageSrc: "/images/teamImg.png",
+    name: "پوریا حاجتی",
+    title: "توسعه دهنده وبسایت",
+    imageSrc: "/images/pouria-hajati.webp",
   },
 ];
 const TeamAndSponsers = (props: Props) => {
   return (
-    <section className="w-full p-page mt-12 flex flex-col gap-20 ">
-      <HeadingPrimay title="همکاران و اسپانسرها" />
+    <section id="team" className="w-full p-page mt-12 flex flex-col gap-20 ">
+      <HeadingPrimay title="تیم ما" />
       <Slider
-        isTeam={true}
+        isTeam={false}
         slidesPerView={1}
         slidesPerViewon700={2}
         slidesPerViewon1200={4}
         spaceBetween={50}
         items={teamMembers}
       />
-      <HeadingSecondary />
+        {props.renderSecondary? '' : <HeadingSecondary />  }
     </section>
   );
 };

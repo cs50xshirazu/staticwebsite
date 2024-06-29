@@ -17,7 +17,7 @@
         background-size: 100% 100%; 
     }
     .header-bg {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), linear-gradient(0deg, rgba(130, 0, 0, 0.20) 0%, rgba(130, 0, 0, 0.20) 100%), url(/images/headerBg.svg), lightgray 0px -143.143px / 100.03% 144.894% no-repeat;        
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), linear-gradient(0deg, rgba(130, 0, 0, 0.20) 0%, rgba(130, 0, 0, 0.20) 100%), url(/images/intro.png), lightgray 0px -143.143px / 100.03% 144.894% no-repeat;        
         background-blend-mode: multiply;
         background-repeat: no-repeat;
         background-size: cover;
@@ -29,7 +29,10 @@
     .accordion-content {
         background: linear-gradient(270deg, #F2DEBA -17.6%, #820000 174.27%);
     }
-
+    .bg-img{
+      background-attachment: fixed;
+      background-repeat: repeat;
+    }
 }
 .video-react .video-react-poster {
     background-color: unset !important;
@@ -113,4 +116,44 @@
       height: 64px;
       transform: rotate(360deg)
     }
+  }
+  .section-title::before{
+    content:"";
+    display: flex;
+    align-items: center;
+    margin-top:1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    justify-content: center;
+    background-color:#820000;
+    border-radius:2rem;
+    width: 10rem;
+    height: .5rem;
+  }
+  .section-title::after{
+    content:"";
+    display: flex;
+    align-items: center;
+    margin-top:1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+    background-color:#820000;
+    border-radius:2rem;
+    width: 10rem;
+    height: .5rem;
+  }
+  
+  .section-line::before{
+    content:"";
+    display: flex;
+    align-items: center;
+    margin-top:1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    justify-content: center;
+    background-color:#820000;
+    border-radius:2rem;
+    width: 50rem;
+    height: .5rem;
   }

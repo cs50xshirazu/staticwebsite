@@ -15,11 +15,11 @@ export const AboutTeacherTexts = (props: Props) => {
         اشاره کرد:
       </p>
       <ul className="text-quaternary text-xl font-semibold mt-7 md:text-lg">
+        <AboutTeacherTextsItem text="8 سال سابقه فعالیت در حوزه IT " />
         <AboutTeacherTextsItem text="سابقه تدریس به عنوان TA در دانشگاه شیراز" />
         <AboutTeacherTextsItem text="موسس و دبیر انجمن علمی مهندسی فناوری اطلاعات دانشگاه شیراز" />
         <AboutTeacherTextsItem text="طراحی و پیاده سازی سامانه LMS اتاق اصناف استان فارس" />
         <AboutTeacherTextsItem text="طراحی سامانه کلاس های مجازی اتاق اصناف استان فارس" />
-        <AboutTeacherTextsItem text="همکاری به عنوان فریلسنر با مرکز نوآوری و کارآفرینی دانشگاه شیراز" />
         <AboutTeacherTextsItem text="و..." />
       </ul>
     </div>
