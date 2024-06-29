@@ -23,7 +23,7 @@
         rgba(0, 0, 0, 0.3) 100%
       ),
       linear-gradient(0deg, rgba(130, 0, 0, 0.2) 0%, rgba(130, 0, 0, 0.2) 100%),
-      url(/images/intro.png),
+      url(../../public/images/intro.png),
       lightgray 0px -143.143px / 100.03% 144.894% no-repeat;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
