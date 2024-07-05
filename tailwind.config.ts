@@ -13,6 +13,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "ButtonImage": "url('/images/buttonBg.svg')",
+        "HeaderImage": "url('/images/intro.png')",
         "BodyImage": "url('/images/image_50.png')",
         "headeangImage": "url('/images/headingLine.svg')",
         "swiperBtnPrev": "url('/icons/swiperButtonPrev.svg')",
