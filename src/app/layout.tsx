@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "سی اس فیفتی شیرازیو",
+  title: "سی اس فیفتی شیراز",
   description: "CS50xShiraz",
 };
 
