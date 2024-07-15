@@ -1,14 +1,19 @@
-import { AboutTeacherTexts } from "@/components";
-import React from "react";
+import { AboutTeacherTexts } from '@/components'
+import Image from 'next/image'
+import CertificateImage from '../../../public/images/certificate.webp'
 
-type Props = {};
-
-export const AboutTeacher = (props: Props) => {
+export const AboutTeacher = () => {
   return (
-    <section id="educator"
-    className="w-full grid grid-cols-2 gap-20 bg-primary p-page py-7 lg:grid-cols-1 md:gap-10">
+    <section
+      id='educator'
+      className='w-full grid grid-cols-2 gap-20 bg-primary p-page py-7 lg:grid-cols-1 md:gap-10'
+    >
       <AboutTeacherTexts />
-      <img src="/images/certificate.png" className="w-full h-full" alt="" />
+      <Image
+        src={CertificateImage}
+        className='w-full h-full'
+        alt='certificate'
+      />
     </section>
-  );
-};
+  )
+}

@@ -1,2 +1,2 @@
-export { HeadingPrimay } from './HeadingPrimay/HeadingPrimay'
-export { HeadingSecondary } from './HeadingSecondary/HeadingSecondary'
+export { HeadingPrimay } from "./HeadingPrimay/HeadingPrimay";
+export { HeadingSecondary } from "./HeadingSecondary/HeadingSecondary";
