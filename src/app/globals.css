@@ -128,7 +128,7 @@
   }
 }
 .section-title::before {
-  content: "";
+  content: '';
   display: flex;
   align-items: center;
   margin-top: 1rem;
@@ -141,7 +141,7 @@
   height: 0.5rem;
 }
 .section-title::after {
-  content: "";
+  content: '';
   display: flex;
   align-items: center;
   margin-top: 1rem;
@@ -155,7 +155,7 @@
 }
 
 .section-line::before {
-  content: "";
+  content: '';
   display: flex;
   align-items: center;
   margin-top: 1rem;
