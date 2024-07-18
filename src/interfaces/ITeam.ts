@@ -1,5 +1,5 @@
 export interface ITeam {
-    name: string
-    imageSrc: string
-    title: string
+  name: string;
+  imageSrc: string;
+  title: string;
 }

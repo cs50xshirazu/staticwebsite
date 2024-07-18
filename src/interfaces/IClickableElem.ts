@@ -1,3 +1,3 @@
 export interface IClickableElem {
-    onClick: () => void
+  onClick: () => void;
 }

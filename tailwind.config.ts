@@ -1,5 +1,5 @@
+import { nextui } from '@nextui-org/react'
 import type { Config } from 'tailwindcss'
-import { nextui } from "@nextui-org/react";
 
 const config: Config = {
   content: [
@@ -7,48 +7,47 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/features/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
+    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       backgroundImage: {
-        "ButtonImage": "url('/images/buttonBg.svg')",
-        "HeaderImage": "url('/images/intro.png')",
-        "BodyImage": "url('/images/image_50.png')",
-        "headeangImage": "url('/images/headingLine.svg')",
-        "swiperBtnPrev": "url('/icons/swiperButtonPrev.svg')",
-        "swiperBtnNext": "url('/icons/swiperButtonNext.svg')"
-
+        ButtonImage: "url('/images/buttonBg.webp')",
+        HeaderImage: "url('/images/intro.webp')",
+        BodyImage: "url('/images/image_50.webp')",
+        headerLineImage: "url('/images/headingLine.webp')",
+        swiperBtnPrev: "url('/icons/swiperButtonPrev.svg')",
+        swiperBtnNext: "url('/icons/swiperButtonNext.svg')",
       },
       colors: {
-        primary: "#820000",
-        secondary: "#4E6C50",
-        tertiary: "#F2DEBA",
-        quaternary: "#FAFAFA",
-        quinary: "#212121"
+        primary: '#820000',
+        secondary: '#4E6C50',
+        tertiary: '#F2DEBA',
+        quaternary: '#FAFAFA',
+        quinary: '#212121',
       },
       fontSize: {
-        "2.5xl": '1.75rem',
-        "4.5xl": '2.5rem',
+        '2.5xl': '1.75rem',
+        '4.5xl': '2.5rem',
       },
       fontFamily: {
-        "GEO703": ['GEO703'],
-        'IranYekan': ['IRANYekan', "sans-serif"],
+        GEO703: ['GEO703'],
+        sans: ['var(--font-vazirmatn)'],
+        mono: ['var(--font-roboto-mono)'],
       },
       boxShadow: {
-        primary: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
+        primary: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
       },
       screens: {
-        "2xl": { max: "1536px" },
-        xl: { max: "1279px" },
-        lg: { max: "1024px" },
-        md: { max: "768px" },
-        sm: { max: "640px" },
+        '2xl': { max: '1536px' },
+        xl: { max: '1279px' },
+        lg: { max: '1024px' },
+        md: { max: '768px' },
+        sm: { max: '640px' },
       },
-
     },
   },
 
-  plugins: [nextui()]
+  plugins: [nextui()],
 }
 export default config
