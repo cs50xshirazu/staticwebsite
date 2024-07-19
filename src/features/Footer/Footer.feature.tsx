@@ -1,5 +1,9 @@
 import { FooterBox } from '@/components'
 import Image from 'next/image'
+import cs50logo from '../../../public/icons/cs50xShiraz.svg'
+import frontChapterLogo from '../../../public/icons/frontchapter.svg'
+import shirazuLogo from '../../../public/icons/shirazu.svg'
+import shirazUniversityLogo from '../../../public/icons/shirazUniversity.svg'
 import footerLineImage from '../../../public/images/footerLine.svg'
 
 const Footer = () => {
@@ -13,21 +17,21 @@ const Footer = () => {
       <div className='w-full grid grid-cols-3 gap-20 md:grid-cols-1  md:gap-3'>
         <div className='w-full grid grid-cols-4 items-center'>
           <Image
-            src='/icons/cs50xShiraz.svg'
+            src={cs50logo}
             alt='cs50xShiraz'
             width={65}
             height={87}
             className='hover:scale-110 transition-all'
           />
           <Image
-            src='/icons/shirazu.svg'
+            src={shirazuLogo}
             alt='shirazu'
             width={65}
             height={87}
             className='hover:scale-110 transition-all'
           />
           <Image
-            src='/icons/shirazUniversity.svg'
+            src={shirazUniversityLogo}
             alt='shirazUniversity'
             width={65}
             height={87}
@@ -39,7 +43,7 @@ const Footer = () => {
             rel='noopener noreferrer'
           >
             <Image
-              src='/icons/frontchapter.svg'
+              src={frontChapterLogo}
               alt='FrontChapter'
               width={65}
               height={87}

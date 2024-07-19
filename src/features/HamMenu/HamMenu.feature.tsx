@@ -2,10 +2,9 @@
 import { ButtonPrimary, HeadingPrimayText } from '@/components'
 import Image from 'next/image'
 import { useRef, useState } from 'react'
+import logo from '../../../public/images/logo.webp'
 
-type Props = {}
-
-const HamMenu = (props: Props) => {
+const HamMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
   const hamBtnRef = useRef(null) as any
   const hamMenuBtnRef = useRef(null) as any
@@ -21,7 +20,7 @@ const HamMenu = (props: Props) => {
         className={`w-full h-20 px-28 2xl:px-10 md:!px-4 py-2.5 md:flex justify-between items-center hidden sticky z-20 bg-BodyImage top-0 right-0`}
       >
         <Image
-          src='/images/logo.webp'
+          src={logo}
           alt='LOGO'
           className='h-14 w-10'
           height={56}
