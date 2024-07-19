@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
+import lineImage from '../../../../public/images/line.svg'
 import { HeadingPrimayText } from '../../HeadingPrimayText/HeadingPrimayText'
+
 type Props = {
   title?: string
   children?: React.ReactNode
@@ -11,7 +13,7 @@ export const HeadingPrimay = ({ title, children, className }: Props) => {
   return (
     <div className='w-full min-h-10 grid grid-cols-3 gap-4 place-items-center'>
       <Image
-        src='/images/line.svg'
+        src={lineImage}
         width={480}
         height={34}
         className='w-full h-full'
@@ -28,7 +30,7 @@ export const HeadingPrimay = ({ title, children, className }: Props) => {
         )}
       </div>
       <Image
-        src='/images/line.svg'
+        src={lineImage}
         width={480}
         height={34}
         className='w-full h-full rotate-180'
