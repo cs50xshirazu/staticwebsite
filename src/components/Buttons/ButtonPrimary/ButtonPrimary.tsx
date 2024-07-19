@@ -1,5 +1,6 @@
 import { IClickableElem } from '@/interfaces'
 import Image from 'next/image'
+import buttonBg from '../../../../public/images/buttonBg.webp'
 
 type Props = {
   title: string
@@ -15,7 +16,7 @@ export const ButtonPrimary = (props: Props) => {
       }`}
     >
       <Image
-        src='/images/buttonBg.webp'
+        src={buttonBg}
         className='w-full h-full absolute inset-0 object-cover object-center'
         alt='button-bg'
         width={160}

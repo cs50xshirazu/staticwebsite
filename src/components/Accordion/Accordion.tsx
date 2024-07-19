@@ -1,8 +1,9 @@
 'use client'
 import { Accordion, AccordionItem } from '@nextui-org/react'
 import Image from 'next/image'
+import accordionStart from '../../../public/icons/accordionStart.svg'
+import indicatorIcon from '../../../public/icons/indicator.svg'
 
-type Props = {}
 const questions: { title: string; content: string }[] = [
   {
     title: 'آیا برای ثبت نام حتما باید ساکن شیراز باشم؟',
@@ -40,7 +41,7 @@ const questions: { title: string; content: string }[] = [
       'سوالاتتون را میتوانید در گروهی که در تلگرام و دیسکورد تشکیل میشه بپرسید و هم در جلسات رفع اشکال میتوانید سوالتون را از ta بپرسید.',
   },
 ]
-export const CustomAccordion = (props: Props) => {
+export const CustomAccordion = () => {
   return (
     <Accordion variant='splitted'>
       {questions.map((que, i) => (
@@ -53,14 +54,14 @@ export const CustomAccordion = (props: Props) => {
               alt='indicator'
               width={20}
               height={20}
-              src='/icons/indicator.svg'
+              src={indicatorIcon}
               className='md:size-5'
             />
           }
           className='!p-0 overflow-hidden font-medium !rounded-none shadow-primary'
           startContent={
             <Image
-              src='/icons/accordionStart.svg'
+              src={accordionStart}
               alt='accordionStart'
               className='md:size-5'
               height={20}

@@ -1,14 +1,10 @@
 'use client'
 import { AccordionItem } from '@nextui-org/react'
 import Image from 'next/image'
+import accordionStartIcon from '../../../../public/icons/accordionStart.svg'
+import indicatorIcon from '../../../../public/icons/indicator.svg'
 
-type Props = {
-  title: string
-  content: string
-  // key: number;
-}
-
-export const CustomAccordionItem = (props: Props) => {
+export const CustomAccordionItem = () => {
   return (
     <AccordionItem
       key={1}
@@ -17,7 +13,7 @@ export const CustomAccordionItem = (props: Props) => {
       indicator={
         <Image
           alt='indicator'
-          src='/icons/indicator.svg'
+          src={indicatorIcon}
           width={20}
           height={20}
         />
@@ -25,7 +21,7 @@ export const CustomAccordionItem = (props: Props) => {
       className='!p-0 overflow-hidden font-medium !rounded-none shadow-primary'
       startContent={
         <Image
-          src='/icons/accordionStart.svg'
+          src={accordionStartIcon}
           alt='accordionStart'
           width={20}
           height={20}
