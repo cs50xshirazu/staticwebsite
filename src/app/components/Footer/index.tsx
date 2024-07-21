@@ -21,9 +21,6 @@ const Footer = () => {
                 <div className="px-4 py-11 flex items-center justify-between max-sm:flex-col-reverse max-sm:gap-8">
                     <div className="flex items-center gap-4">
                         <a href="#" className="shrink-0">
-                            <Image className="size-[35px] sm:size-[40px] md:size-[50px]" src={FrontChapterImage} alt="frontchapter" />
-                        </a>
-                        <a href="#" className="shrink-0">
                             <Image className="size-[35px] sm:size-[40px] md:size-[50px]" src={Cs50xShirazImage} alt="cs50xshiraz" />
                         </a>
                         <a href="#" className="shrink-0">
