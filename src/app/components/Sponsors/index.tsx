@@ -10,10 +10,6 @@ const Sponsors = () => {
             title: "کارخانه نوآوری"
         },
         {
-            image: "/images/sponsors/frontchapter.png",
-            title: "فرانت چپتر"
-        },
-        {
             image: "/images/sponsors/shiraz-university.jpg",
             title: "دانشگاه شیراز"
         }
