@@ -16,7 +16,7 @@ const Sponsors = () => {
     ];
 
     const renderSponsors = () => {
-        return sponsors.map((sponsor) => <Sponsor {...sponsor} />);
+        return sponsors.map((sponsor) => <Sponsor {...sponsor} key={sponsor.title}/>);
     };
 
     return (

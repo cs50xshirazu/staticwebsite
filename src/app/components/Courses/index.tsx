@@ -14,7 +14,7 @@ const Courses = () => {
     ];
 
     const renderCourses = () => {
-        return courses.map((course) => <Course {...course} />);
+        return courses.map((course) => <Course {...course} key={course.title} />);
     };
 
     return (
