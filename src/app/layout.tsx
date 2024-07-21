@@ -4,6 +4,7 @@ import "./globals.css";
 import BackgroundPattern from "@/app/components/BackgroundPattern";
 import Navbar from "@/app/components/Navbar";
 import Header from "@/app/components/Header";
+import SideDrawer from "@/app/components/SideDrawer";
 
 const IRANYekanX = localFont({
     src: "../assets/fonts/IRANYekanX/IRANYekanXVF.woff2",
@@ -19,7 +20,8 @@ const GeoSlab703 = localFont({
 
 export const metadata: Metadata = {
     title: "سی اس فیفتی اکس شیراز",
-    description: "CS50xShiraz"
+    description: "CS50xShiraz",
+    manifest: "/site.webmanifest"
 };
 
 type RootLayoutProps = {
@@ -29,11 +31,21 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="fa" dir="rtl" className={`${IRANYekanX.variable} ${GeoSlab703.variable}`}>
+
+        <head>
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+            <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#820000" />
+            <meta name="msapplication-TileColor" content="#820000" />
+        </head>
+
         <body className="font-iran-yekan-x overflow-x-hidden">
+
         <BackgroundPattern />
         <Navbar />
+        <SideDrawer />
         <Header />
         {children}
+
         </body>
         </html>
     );
