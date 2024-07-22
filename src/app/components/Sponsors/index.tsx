@@ -1,6 +1,7 @@
 import TitleBar from "@/components/TitleBar";
 import Sponsor from "@/app/components/Sponsors/Sponsor";
 import DividerShape from "@/components/DividerShape";
+import Paragraph from "@/components/Paragraph";
 
 const Sponsors = () => {
 
@@ -33,12 +34,12 @@ const Sponsors = () => {
                     اسپانسر های ما
                 </span>
             </TitleBar>
-            <div className="mt-[40px] gap-12 text-center">
-                <span className="font-black whitespace-nowrap">با پذیرش نقش اسپانسر در ، شما به عنوان عضو ارزشمند در ترویج دانش و فرهنگ در جامعه شناخته خواهید شد.</span>
-            </div>
-            <div className="text-center">
-                <span className="font-black whitespace-nowrap">ما منتظر همکاری با شما هستیم تا با هم، یک همایش علمی بی‌نظیر را برگزار کنیم.</span>
-            </div>
+
+            <Paragraph className="!text-center mt-[40px] !text-lg !font-bold px-8 !leading-[180%]">
+                با پذیرش نقش اسپانسر در ، شما به عنوان عضو ارزشمند در ترویج دانش و فرهنگ در جامعه شناخته خواهید شد.
+                <br />
+                ما منتظر همکاری با شما هستیم تا با هم، یک همایش علمی بی‌نظیر را برگزار کنیم.
+            </Paragraph>
 
             <div className="mt-[40px] mb-[30px] flex justify-center items-center gap-12 max-sm:flex-wrap">
                 {renderSponsors()}
