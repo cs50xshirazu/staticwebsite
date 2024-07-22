@@ -7,7 +7,7 @@ import FeaturesSection from "@/app/components/About/FeaturesSection";
 
 const About = () => {
     return (
-        <section className="container mt-[40px]">
+        <section className="container mt-[40px]" id="what-is-cs50x">
             <TitleBar className="gap-6">
                 <span className="font-geo-slab-703 font-bold whitespace-nowrap text-2xl sm:text-4xl">
                     CS50x SHIRAZ

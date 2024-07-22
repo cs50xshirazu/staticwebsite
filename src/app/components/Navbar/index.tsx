@@ -26,17 +26,17 @@ const Navbar = () => {
                 <DividerShape />
                 <ul className="flex items-center gap-12">
                     <li className="text-xl font-bold whitespace-nowrap hover:text-primary transition-all">
-                        <a href="#">
+                        <a href="#frequently-asked-questions">
                             سوالات متداول
                         </a>
                     </li>
                     <li className="text-xl font-bold whitespace-nowrap hover:text-primary transition-all">
-                        <a href="#">
+                        <a href="#our-courses">
                             دوره ها
                         </a>
                     </li>
                     <li className="text-xl font-bold whitespace-nowrap hover:text-primary transition-all">
-                        <a href="#">
+                        <a href="#what-is-cs50x">
                             چیست؟ Cs50
                         </a>
                     </li>

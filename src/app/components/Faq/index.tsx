@@ -45,10 +45,6 @@ const Faq = () => {
             description: `سه شنبه های هر هفته از ساعت ۱۷ الی ۱۹ در کارخانه نوآوری شیراز`
         },
         {
-            title: "زمان برگزاری Office Hours چه روز هایی از هفته هست ؟",
-            description: `سه شنبه های هر هفته از ساعت ۱۷ الی ۱۹ در کارخانه نوآوری شیراز`
-        },
-        {
             title: "آیا بجز مدرک سی اس فیفتی هاروارد از طرف دانشگاه شیراز هم مدرک دریافت میکنیم ؟",
             description: `بله از طرف انجمن علمی ای تی دانشگاه شیراز نیز مدرک دریافت میکنید`
         }
@@ -65,7 +61,7 @@ const Faq = () => {
     };
 
     return (
-        <section className="container">
+        <section className="container" id="frequently-asked-questions">
             <TitleBar className="gap-6">
                 <span className="font-black whitespace-nowrap  text-xl sm:text-2xl">
                     سوالات متداول
