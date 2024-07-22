@@ -53,7 +53,7 @@ const Footer = () => {
                 <div className="flex justify-between items-center px-4 py-5 max-sm:flex-col gap-6">
                     <div className="flex items-center gap-2 text-white max-sm:text-center">
                         &copy;
-                        2023 تمامی حقوق برای Cs50xShiraz و دانشگاه شیراز محفوظ می باشد.
+                        2023 تمامی حقوق برای CS50xShiraz محفوظ می باشد.
                     </div>
                     <div className="text-white max-sm:text-center">
                         ساخته شده با ♥ توسط <a href='https://byeto.net' target="_blank">بایتو</a> 
