@@ -7,11 +7,18 @@ const Sponsors = () => {
     const sponsors: Sponsor[] = [
         {
             image: "/images/sponsors/noavari.jpg",
-            title: "کارخانه نوآوری"
+            title: "کارخانه نوآوری",
+            link: "https://shirazsuf.ir/"
         },
         {
             image: "/images/sponsors/shiraz-university.jpg",
-            title: "دانشگاه شیراز"
+            title: "دانشگاه شیراز",
+            link: "https://shirazu.ac.ir/"
+        },
+        {
+            image: "/images/sponsors/sponser.png",
+            title: "ارسال درخواست اسپانسری",
+            link: "https://shirazidev.ir"
         }
     ];
 
@@ -26,6 +33,12 @@ const Sponsors = () => {
                     اسپانسر های ما
                 </span>
             </TitleBar>
+            <div className="mt-[40px] gap-12 text-center">
+                <span className="font-black whitespace-nowrap">با پذیرش نقش اسپانسر در ، شما به عنوان عضو ارزشمند در ترویج دانش و فرهنگ در جامعه شناخته خواهید شد.</span>
+            </div>
+            <div className="text-center">
+                <span className="font-black whitespace-nowrap">ما منتظر همکاری با شما هستیم تا با هم، یک همایش علمی بی‌نظیر را برگزار کنیم.</span>
+            </div>
 
             <div className="mt-[40px] mb-[30px] flex justify-center items-center gap-12 max-sm:flex-wrap">
                 {renderSponsors()}

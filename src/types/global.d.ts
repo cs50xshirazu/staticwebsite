@@ -10,6 +10,7 @@ declare global {
     type Sponsor = {
         title : string;
         image : string;
+        link : string;
     }
 
     type QuestionAnswer = {

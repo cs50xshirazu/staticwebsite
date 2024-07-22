@@ -56,7 +56,7 @@ const Footer = () => {
                         2023 تمامی حقوق برای Cs50xShiraz و دانشگاه شیراز محفوظ می باشد.
                     </div>
                     <div className="text-white max-sm:text-center">
-                        ساخته شده با عشق توسط <a href='https://byeto.net'>بایتو</a> 
+                        ساخته شده با ♥ توسط <a href='https://byeto.net' target="_blank">بایتو</a> 
                     </div>
                 </div>
             </div>

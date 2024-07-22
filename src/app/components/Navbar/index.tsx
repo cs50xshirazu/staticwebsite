@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <nav className="h-[80px] sm:h-[140px] flex flex-col justify-center items-center">
             <div className="container flex max-sm:flex-row-reverse justify-between items-center px-10">
-                <a className="max-sm:hidden" href="#">
+                <a className="max-sm:hidden" href="https://summer.cs50xshiraz.ir">
                     <ShapeTitle className="py-5" textClassName="text-sm font-bold">
                         ورود به پنل کاربری
                     </ShapeTitle>
@@ -16,7 +16,7 @@ const Navbar = () => {
                 <Logo />
                 <span className="sm:hidden text-xl xs:text-2xl font-black !font-geo-slab-703">CS50xShiraz</span>
                 <SideDrawerButton />
-                <a className="max-sm:hidden" href="#">
+                <a className="max-sm:hidden" href="https://evnd.co/lvg3L" target="_blank">
                     <ShapeTitle className="py-5" textClassName="text-sm font-bold">
                         ثبت نام آنلاین
                     </ShapeTitle>
