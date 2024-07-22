@@ -1,14 +1,15 @@
 import DividerShape from "@/components/DividerShape";
-import DiscordIconImage from "@/assets/icons/discord.svg";
 import GithubIconImage from "@/assets/icons/github.svg";
 import TwitterIconImage from "@/assets/icons/twitter.svg";
+import LinkedinIconImage from "@/assets/icons/linkedin.svg";
+import InstagramIconImage from "@/assets/icons/instagram.svg";
 
-import FrontChapterImage from "@/assets/images/brands/frontchapter.svg";
 import Cs50xShirazImage from "@/assets/images/brands/cs50xShiraz.svg";
 import ShirazUniversityImage from "@/assets/images/brands/shirazUniversity.svg";
 import ShirazUImage from "@/assets/images/brands/shirazu.svg";
 import FooterBgImage from "@/assets/images/footer-bg.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -37,15 +38,18 @@ const Footer = () => {
                             <a href="#">دانشگاه شیراز</a>
                         </div>
                         <div className="flex justify-start items-center gap-4 w-fit">
-                            <a href="#" className="hover:brightness-150 transition-all">
-                                <Image src={DiscordIconImage} alt="discord" className="size-[26px] md:size-[32px]" />
-                            </a>
-                            <a href="#" className="hover:brightness-150 transition-all">
+                            <Link target="_blank" href="https://github.com/cs50xshirazu" className="hover:brightness-150 transition-all">
                                 <Image src={GithubIconImage} alt="github" className="size-[20px] md:size-[25px]" />
-                            </a>
-                            <a href="#" className="hover:brightness-150 transition-all">
+                            </Link>
+                            <Link target="_blank" href="#" className="hover:brightness-150 transition-all">
                                 <Image src={TwitterIconImage} alt="twitter" className="size-[20px] md:size-[25px]" />
-                            </a>
+                            </Link>
+                            <Link target="_blank" href="https://www.instagram.com/cs50xshiraz/" className="hover:brightness-150 transition-all">
+                                <Image src={InstagramIconImage} alt="instagram" className="size-[20px] md:size-[25px]" />
+                            </Link>
+                            <Link target="_blank" href="#" className="hover:brightness-150 transition-all">
+                                <Image src={LinkedinIconImage} alt="linkedin" className="size-[20px] md:size-[25px]" />
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -56,7 +60,7 @@ const Footer = () => {
                         2023 تمامی حقوق برای CS50xShiraz محفوظ می باشد.
                     </div>
                     <div className="text-white max-sm:text-center">
-                        ساخته شده با ♥ توسط <a href='https://byeto.net' target="_blank">بایتو</a> 
+                        ساخته شده با ♥ توسط <Link href='https://byeto.net' className="hover:underline" target="_blank">بایتو</Link>
                     </div>
                 </div>
             </div>
