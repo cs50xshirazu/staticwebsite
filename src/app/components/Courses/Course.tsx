@@ -12,7 +12,7 @@ const Course = ({ image, link, title }: CourseProps) => {
                 <Image src={image} alt={title} className="object-cover" fill/>
             </div>
             <span className="text-xl font-bold text-center">{title}</span>
-            <a href="https://evnd.co/lvg3L" target="_blank">
+            <a href={link} target="_blank">
                 <ShapeTitle>
                     <span className="font-semibold text-lg">ثبت نام در دوره</span>
                 </ShapeTitle>

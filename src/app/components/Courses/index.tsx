@@ -8,7 +8,7 @@ const Courses = () => {
     const courses: Course[] = [
         {
             image: "/images/courses/cs50x.png",
-            link: "#",
+            link: "https://evnd.co/lvg3L",
             title: "دوره مبانی علوم کامپیوتر هاروارد (CS50x)"
         }
     ];
