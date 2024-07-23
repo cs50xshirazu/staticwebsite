@@ -5,17 +5,29 @@ import Faq from "@/app/components/Faq";
 import Footer from "@/app/components/Footer";
 import Courses from "@/app/components/Courses";
 import Sponsors from "@/app/components/Sponsors";
+import BackgroundPattern from "@/app/components/BackgroundPattern";
+import Navbar from "@/app/components/Navbar";
+import SideDrawer from "@/app/components/SideDrawer";
+import Header from "@/app/components/Header";
+import Employees from "@/app/components/Employees";
 
 export default function Home() {
     return (
-        <main className="">
-            <About />
-            <Features />
-            <Courses />
-            <Sponsors />
-            <Preferences />
-            <Faq />
-            <Footer />
-        </main>
+        <>
+            <BackgroundPattern />
+            <Navbar />
+            <SideDrawer />
+            <Header />
+            <main className="">
+                <About />
+                <Features />
+                <Courses />
+                <Sponsors />
+                <Preferences />
+                <Employees />
+                <Faq />
+                <Footer />
+            </main>
+        </>
     );
 }

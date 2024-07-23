@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import BackgroundPattern from "@/app/components/BackgroundPattern";
-import Navbar from "@/app/components/Navbar";
-import Header from "@/app/components/Header";
-import SideDrawer from "@/app/components/SideDrawer";
 
 const IRANYekanX = localFont({
     src: "../assets/fonts/IRANYekanX/IRANYekanXVF.woff2",
@@ -40,10 +36,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
         <body className="font-iran-yekan-x overflow-x-hidden">
 
-        <BackgroundPattern />
-        <Navbar />
-        <SideDrawer />
-        <Header />
         {children}
 
         </body>
