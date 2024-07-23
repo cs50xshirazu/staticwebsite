@@ -2,8 +2,28 @@ import ShapeTitle from "@/components/ShapeTitle";
 import Logo from "@/app/components/Logo";
 import DividerShape from "@/components/DividerShape";
 import SideDrawerButton from "@/app/components/Navbar/SideDrawerButton";
+import Link from "next/link";
 
-const Navbar = () => {
+export type NavbarProps = {
+    links: {
+        link: string;
+        title: string;
+    }[]
+}
+
+const Navbar = ({ links }: NavbarProps) => {
+
+    const renderLinks = () => {
+        return links.map((link) => {
+            return (
+                <li key={link.link} className="text-xl font-bold whitespace-nowrap hover:text-primary transition-all">
+                    <Link href={link.link} className="text-center">
+                        {link.title}
+                    </Link>
+                </li>
+            );
+        });
+    };
 
     return (
         <nav className="h-[80px] sm:h-[140px] flex flex-col justify-center items-center">
@@ -25,21 +45,7 @@ const Navbar = () => {
             <div className="max-sm:hidden flex items-center gap-8 container mt-1">
                 <DividerShape />
                 <ul className="flex items-center gap-12">
-                    <li className="text-xl font-bold whitespace-nowrap hover:text-primary transition-all">
-                        <a href="#frequently-asked-questions">
-                            سوالات متداول
-                        </a>
-                    </li>
-                    <li className="text-xl font-bold whitespace-nowrap hover:text-primary transition-all">
-                        <a href="#our-courses">
-                            دوره ها
-                        </a>
-                    </li>
-                    <li className="text-xl font-bold whitespace-nowrap hover:text-primary transition-all">
-                        <a href="#what-is-cs50x">
-                            چیست؟ Cs50
-                        </a>
-                    </li>
+                    {renderLinks()}
                 </ul>
                 <DividerShape reverse />
             </div>

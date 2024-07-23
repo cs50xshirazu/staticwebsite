@@ -9,13 +9,27 @@ import BackgroundPattern from "@/app/components/BackgroundPattern";
 import Navbar from "@/app/components/Navbar";
 import SideDrawer from "@/app/components/SideDrawer";
 import Header from "@/app/components/Header";
-import Employees from "@/app/components/Employees";
 
 export default function Home() {
     return (
         <>
             <BackgroundPattern />
-            <Navbar />
+            <Navbar
+                links={[
+                    {
+                        title: "سوالات متداول",
+                        link: "#frequently-asked-questions"
+                    },
+                    {
+                        title: "تیم ما",
+                        link: "#our-courses"
+                    },
+                    {
+                        title: "چیست؟ Cs50",
+                        link: "#what-is-cs50x"
+                    }
+                ]}
+            />
             <SideDrawer />
             <Header />
             <main className="">
@@ -24,7 +38,6 @@ export default function Home() {
                 <Courses />
                 <Sponsors />
                 <Preferences />
-                <Employees />
                 <Faq />
                 <Footer />
             </main>
