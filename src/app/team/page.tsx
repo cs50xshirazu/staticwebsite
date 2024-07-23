@@ -61,7 +61,7 @@ export default function Home() {
                     },
                     {
                         title: "تیم ما",
-                        link: "/#our-courses"
+                        link: "/team"
                     },
                     {
                         title: "چیست؟ Cs50",
