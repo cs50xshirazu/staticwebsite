@@ -19,7 +19,7 @@ const Sponsors = () => {
         {
             image: "/images/sponsors/sponser.png",
             title: "ارسال درخواست اسپانسری",
-            link: "https://shirazidev.ir"
+            link: "https://sponsor.cs50xshiraz.ir"
         }
     ];
 
