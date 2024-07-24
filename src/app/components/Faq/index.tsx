@@ -5,7 +5,7 @@ import FaqBox from "@/app/components/Faq/FaqBox";
 import { useState } from "react";
 
 const Faq = () => {
-    const [activeId, setActiveId] = useState(0);
+    const [activeId, setActiveId] = useState(-1);
 
     const questions: QuestionAnswer[] = [
         {
