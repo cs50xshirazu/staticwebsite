@@ -59,9 +59,9 @@ const Footer = () => {
                         &copy;
                         2023 تمامی حقوق برای CS50xShiraz محفوظ می باشد.
                     </div>
-                    <div className="text-white max-sm:text-center">
-                        ساخته شده با ♥ توسط <Link href='https://byeto.net' className="hover:underline" target="_blank">بایتو</Link>
-                    </div>
+                    {/*<div className="text-white max-sm:text-center">*/}
+                    {/*    ساخته شده با ♥ توسط <Link href='https://byeto.net' className="hover:underline" target="_blank">بایتو</Link>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </footer>
