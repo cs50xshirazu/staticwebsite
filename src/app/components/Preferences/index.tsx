@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CertificateImage from "@/assets/images/certificate.webp";
+import CertificateImage from "@/assets/images/certificate-section.jpg";
 import Paragraph from "@/components/Paragraph";
 import ShapeFrame from "@/components/ShapeFrame";
 
