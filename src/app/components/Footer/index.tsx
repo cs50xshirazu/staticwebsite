@@ -33,21 +33,21 @@ const Footer = () => {
                     </div>
                     <div className="flex items-center gap-6 sm:gap-12 md:gap-16 max-sm:flex-col">
                         <div className="text-white font-bold flex items-center gap-6 md:gap-10 md:text-lg">
-                            <a href="#">cs50</a>
+                            <a href="https://cs50.harvard.edu">cs50</a>
                             <a href="#">virgool</a>
-                            <a href="#">دانشگاه شیراز</a>
+                            <a href="https://shirazu.ac.ir/">دانشگاه شیراز</a>
                         </div>
                         <div className="flex justify-start items-center gap-4 w-fit">
                             <Link target="_blank" href="https://github.com/cs50xshirazu" className="hover:brightness-150 transition-all">
                                 <Image src={GithubIconImage} alt="github" className="size-[20px] md:size-[25px]" />
                             </Link>
-                            <Link target="_blank" href="#" className="hover:brightness-150 transition-all">
+                            <Link target="_blank" href="https://twitter.com/cs50xshiraz" className="hover:brightness-150 transition-all">
                                 <Image src={TwitterIconImage} alt="twitter" className="size-[20px] md:size-[25px]" />
                             </Link>
                             <Link target="_blank" href="https://www.instagram.com/cs50xshiraz/" className="hover:brightness-150 transition-all">
                                 <Image src={InstagramIconImage} alt="instagram" className="size-[20px] md:size-[25px]" />
                             </Link>
-                            <Link target="_blank" href="#" className="hover:brightness-150 transition-all">
+                            <Link target="_blank" href="https://ir.linkedin.com/company/cs50xshiraz" className="hover:brightness-150 transition-all">
                                 <Image src={LinkedinIconImage} alt="linkedin" className="size-[20px] md:size-[25px]" />
                             </Link>
                         </div>
