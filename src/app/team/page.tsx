@@ -56,6 +56,10 @@ export default function Home() {
             <Navbar
                 links={[
                     {
+                        title: "رویدادها و دوره‌ها",
+                        link: "/#our-courses"
+                    },
+                    {
                         title: "سوالات متداول",
                         link: "/#frequently-asked-questions"
                     },
@@ -64,9 +68,13 @@ export default function Home() {
                         link: "/team"
                     },
                     {
-                        title: "چیست؟ Cs50",
-                        link: "/#what-is-cs50x"
-                    }
+                        title: "اسپانسرها",
+                        link: "/#spnsor"
+                    },
+                    {
+                        title: "بلاگ",
+                        link: "https://blog.cs50xshiraz.ir"
+                    },
                 ]}
             />
             <SideDrawer />

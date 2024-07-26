@@ -28,7 +28,7 @@ const Sponsors = () => {
     };
 
     return (
-        <section className="container mt-[40px]">
+        <section className="container mt-[40px]" id="spnsor">
             <TitleBar className="gap-6">
                 <span className="font-black whitespace-nowrap  text-xl sm:text-2xl">
                     اسپانسر های ما

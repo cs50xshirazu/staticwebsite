@@ -21,7 +21,7 @@ const Courses = () => {
         <section className="mt-[40px]" id="our-courses">
             <TitleBar className="container gap-6">
                 <span className="font-black whitespace-nowrap  text-xl sm:text-2xl">
-                    دوره های ما
+                      رویدادها و دوره ها 
                 </span>
             </TitleBar>
 
