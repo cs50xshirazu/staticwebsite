@@ -5,7 +5,8 @@ const config: Config = {
     content: [
         "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-        "./src/app/**/*.{js,ts,jsx,tsx,mdx}"
+        "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+        "./node_modules/primereact/**/*.{js,ts,jsx,tsx}"
     ],
     theme: {
         extend: {
@@ -21,6 +22,9 @@ const config: Config = {
             backgroundImage: {
                 "main-pattern": "url('/images/bg-pattern.webp')"
             },
+            borderRadius: {
+                "prime-radius": "var(--border-radius)"
+            },
             container: {
                 center: true,
                 screens: {
@@ -28,7 +32,7 @@ const config: Config = {
                 },
                 padding: {
                     // DEFAULT: "30px",
-                    DEFAULT: "18px",
+                    DEFAULT: "18px"
                 }
             },
             colors: {
@@ -43,6 +47,41 @@ const config: Config = {
                 },
                 "brand-cream": {
                     DEFAULT: "hsl(var(--color-brand-cream) / <alpha-value>)"
+                },
+                "prime": {
+                    "mask-bg": "var(--mask-bg)",
+                    "focus-ring": "var(--focus-ring)",
+                    "highlight": {
+                        bg: "var(--highlight-bg)",
+                        text: "var(--highlight-text-color)"
+                    },
+                    "text": {
+                        DEFAULT: "var(--text-color)",
+                        secondary: "var(--text-color-secondary)"
+                    },
+                    "primary": {
+                        DEFAULT: "var(--primary-color)",
+                        text: "var(--primary-color-text)"
+                    },
+                    "surface": {
+                        0: "var(--surface-0)",
+                        50: "var(--surface-50)",
+                        100: "var(--surface-100)",
+                        200: "var(--surface-200)",
+                        300: "var(--surface-300)",
+                        400: "var(--surface-400)",
+                        500: "var(--surface-500)",
+                        600: "var(--surface-600)",
+                        700: "var(--surface-700)",
+                        800: "var(--surface-800)",
+                        900: "var(--surface-900)",
+                        ground: "var(--surface-ground)",
+                        section: "var(--surface-section)",
+                        card: "var(--surface-card)",
+                        overlay: "var(--surface-overlay)",
+                        border: "var(--surface-border)",
+                        hover: "var(--surface-hover)"
+                    }
                 }
             }
         }
