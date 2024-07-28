@@ -16,7 +16,7 @@ const Navbar = ({ links }: NavbarProps) => {
     const renderLinks = () => {
         return links.map((link) => {
             return (
-                <li key={link.link} className="text-xl font-bold whitespace-nowrap hover:text-primary transition-all">
+                <li key={link.link} className="text-lg font-bold whitespace-nowrap hover:text-primary transition-all">
                     <Link href={link.link} className="text-center">
                         {link.title}
                     </Link>
@@ -42,12 +42,12 @@ const Navbar = ({ links }: NavbarProps) => {
                     </ShapeTitle>
                 </a>
             </div>
-            <div className="max-sm:hidden flex items-center gap-8 container mt-1">
-                <DividerShape />
-                <ul className="flex items-center gap-12">
+            <div className="max-sm:hidden flex items-center max-lg:justify-center gap-8 container mt-1">
+                <DividerShape className="max-lg:hidden" />
+                <ul className="flex items-center gap-12 max-lg:mt-4">
                     {renderLinks()}
                 </ul>
-                <DividerShape reverse />
+                <DividerShape className="max-lg:hidden" reverse />
             </div>
         </nav>
     );
