@@ -27,27 +27,25 @@ const Footer = () => {
                         <a href="#" className="shrink-0">
                             <Image className="size-[35px] sm:size-[40px] md:size-[50px]" src={ShirazUniversityImage} alt="shiraz-university" />
                         </a>
-                        <a href="#" className="shrink-0">
-                            <Image className="size-[35px] sm:size-[40px] md:size-[50px]" src={ShirazUImage} alt="shirazu" />
-                        </a>
                     </div>
                     <div className="flex items-center gap-6 sm:gap-12 md:gap-16 max-sm:flex-col">
+                    <div className="text-white font-bold flex items-center gap-6 md:gap-10 md:text-lg">
+                            <a href="https://t.me/cs50xshiraz_support">مشاوره (تلگرام)</a>
+                        </div>
                         <div className="text-white font-bold flex items-center gap-6 md:gap-10 md:text-lg">
-                            <a href="https://cs50.harvard.edu">cs50</a>
-                            <a href="#">virgool</a>
-                            <a href="https://shirazu.ac.ir/">دانشگاه شیراز</a>
+                            <a href="tel:989353554898">تماس با ما</a>
                         </div>
                         <div className="flex justify-start items-center gap-4 w-fit">
                             <Link target="_blank" href="https://github.com/cs50xshirazu" className="hover:brightness-150 transition-all">
                                 <Image src={GithubIconImage} alt="github" className="size-[20px] md:size-[25px]" />
                             </Link>
-                            <Link target="_blank" href="https://twitter.com/cs50xshiraz" className="hover:brightness-150 transition-all">
+                            <Link target="_blank" href="#" className="hover:brightness-150 transition-all">
                                 <Image src={TwitterIconImage} alt="twitter" className="size-[20px] md:size-[25px]" />
                             </Link>
                             <Link target="_blank" href="https://www.instagram.com/cs50xshiraz/" className="hover:brightness-150 transition-all">
                                 <Image src={InstagramIconImage} alt="instagram" className="size-[20px] md:size-[25px]" />
                             </Link>
-                            <Link target="_blank" href="https://ir.linkedin.com/company/cs50xshiraz" className="hover:brightness-150 transition-all">
+                            <Link target="_blank" href="#" className="hover:brightness-150 transition-all">
                                 <Image src={LinkedinIconImage} alt="linkedin" className="size-[20px] md:size-[25px]" />
                             </Link>
                         </div>
@@ -57,7 +55,7 @@ const Footer = () => {
                 <div className="flex justify-between items-center px-4 py-5 max-sm:flex-col gap-6">
                     <div className="flex items-center gap-2 text-white max-sm:text-center">
                         &copy;
-                        2023 تمامی حقوق برای CS50xShiraz محفوظ می باشد.
+‎                        2023-2024 تمامی حقوق برای CS50xShiraz محفوظ می باشد.
                     </div>
                     {/*<div className="text-white max-sm:text-center">*/}
                     {/*    ساخته شده با ♥ توسط <Link href='https://byeto.net' className="hover:underline" target="_blank">بایتو</Link>*/}

@@ -32,17 +32,25 @@ const SideDrawer = () => {
                     </button>
                 </div>
                 <div className="px-8 pt-4 flex flex-col w-full gap-12 font-bold text-2xl mt-8">
+                <Link href="/#our-courses" className="flex items-center gap-4 hover:text-primary/80 transition-colors">
+                        <span className="size-3 bg-primary rounded-full"></span>
+                        رویدادها و دوره‌ها
+                    </Link>
                     <Link href="/#frequently-asked-questions" className="flex items-center gap-4 hover:text-primary/80 transition-colors">
                         <span className="size-3 bg-primary rounded-full"></span>
-                        سوالات متداول
+                            سوالات متداول
                     </Link>
                     <Link href="/team" className="flex items-center gap-4 hover:text-primary/80 transition-colors">
                         <span className="size-3 bg-primary rounded-full"></span>
-                        تیم ما
+                            تیم ما
                     </Link>
-                    <Link href="/#what-is-cs50x" className="flex items-center gap-4 hover:text-primary/80 transition-colors">
+                    <Link href="/#spnsor" className="flex items-center gap-4 hover:text-primary/80 transition-colors">
                         <span className="size-3 bg-primary rounded-full"></span>
-                        چیست؟ Cs50
+                            اسپانسرها
+                    </Link>
+                    <Link href="https://blog.cs50xshiraz.ir/" className="flex items-center gap-4 hover:text-primary/80 transition-colors">
+                        <span className="size-3 bg-primary rounded-full"></span>
+                           بلاگ 
                     </Link>
                 </div>
             </div>
