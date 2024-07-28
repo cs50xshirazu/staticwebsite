@@ -27,9 +27,6 @@ const Footer = () => {
                         <a href="#" className="shrink-0">
                             <Image className="size-[35px] sm:size-[40px] md:size-[50px]" src={ShirazUniversityImage} alt="shiraz-university" />
                         </a>
-                        <a href="#" className="shrink-0">
-                            <Image className="size-[35px] sm:size-[40px] md:size-[50px]" src={ShirazUImage} alt="shirazu" />
-                        </a>
                     </div>
                     <div className="flex items-center gap-6 sm:gap-12 md:gap-16 max-sm:flex-col">
                     <div className="text-white font-bold flex items-center gap-6 md:gap-10 md:text-lg">

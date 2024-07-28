@@ -7,11 +7,6 @@ const Sponsors = () => {
 
     const sponsors: Sponsor[] = [
         {
-            image: "/images/sponsors/noavari.jpg",
-            title: "کارخانه نوآوری",
-            link: "https://shirazsuf.ir/"
-        },
-        {
             image: "/images/sponsors/shiraz-university.jpg",
             title: "دانشگاه شیراز",
             link: "https://shirazu.ac.ir/"
