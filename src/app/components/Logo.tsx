@@ -1,4 +1,4 @@
-import LogoImage from "@/assets/images/logo.webp";
+import LogoImage from "../../../public/images/logo.png";
 import Image from "next/image";
 
 const Logo = () => {
