@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HeaderBackgroundImage from "@/assets/images/header-bg.webp";
+import HeaderBackgroundImage from "@/assets/images/home-img.webp";
 
 const Header = () => {
     return (

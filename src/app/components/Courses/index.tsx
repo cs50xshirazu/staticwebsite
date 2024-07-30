@@ -1,7 +1,7 @@
 import TitleBar from "@/components/TitleBar";
 import Course from "@/app/components/Courses/Course";
 import Image from "next/image";
-import BookImage from "@/assets/images/cs50book.webp";
+import BookImage from "@/assets/images/home2img.png";
 
 const Courses = () => {
 
