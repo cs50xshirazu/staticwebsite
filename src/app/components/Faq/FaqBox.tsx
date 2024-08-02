@@ -34,7 +34,7 @@ const FaqBox = ({ title, children, activeId, setActiveId, id }: FaqBoxProps) => 
     return (
         <div>
             <button
-                className="w-full py-3 px-5 ring ring-offset-[-4px] active:ring-offset-2 ring-primary transition-all hover:bg-primary/85 bg-primary flex items-center justify-between gap-6"
+                className="w-full py-3 px-5 ring ring-offset-[-4px] active:ring-offset-2 ring-brand-primary transition-all hover:bg-brand-primary/85 bg-brand-primary flex items-center justify-between gap-6"
                 onClick={toggleCollapse}>
                 <div className="flex items-center gap-4">
                     <svg className="w-[18px] lg:w-[25px]" height="27" viewBox="0 0 25 27" fill="none"

@@ -6,7 +6,7 @@ import { useMemo } from "react";
 
 export type TeamDividerProps = {
     title: string;
-    employees: Employee[];
+    employees: TeamType[];
 }
 
 const TeamDivider = ({ employees, title }: TeamDividerProps) => {

@@ -16,7 +16,7 @@ const Navbar = ({ links }: NavbarProps) => {
     const renderLinks = () => {
         return links.map((link) => {
             return (
-                <li key={link.link} className="text-lg font-bold whitespace-nowrap hover:text-primary transition-all">
+                <li key={link.link} className="text-lg font-bold whitespace-nowrap hover:text-brand-primary transition-all">
                     <Link href={link.link} className="text-center">
                         {link.title}
                     </Link>

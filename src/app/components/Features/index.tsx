@@ -17,7 +17,7 @@ const Features = () => {
                 گواهی حضور در دوره را از دانشگاه شیراز دریافت کنید. گواهی پایان دوره تحت دامنه دانشگاه هاروارد و گواهی
                 حضور تحت دامنه دانشگاه شیراز صادر می گردد.
             </Paragraph>
-            <div className="bg-primary py-12 mt-[40px]">
+            <div className="bg-brand-primary py-12 mt-[40px]">
                 <div className="container flex max-lg:flex-col items-center gap-12">
                     <div className="flex-1">
                         <h2 className="text-2xl xs:text-3xl font-bold text-white">

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --color-primary: 0 100% 25.49%;
+    --color-brand-primary: 0 100% 25.49%;
     --color-brand-green: 124 16.15% 36.5%;
     --color-brand-cream: 38.57 68.29% 83.92%;
     --color-brand-white: 30 100% 98.43%;
@@ -13,6 +13,25 @@
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 20px;
+    }
+
+    .custom-scrollbar *::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    .custom-scrollbar *::-webkit-scrollbar-track {
+        background: #303030;
+    }
+
+    /* Handle */
+    .custom-scrollbar *::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    .custom-scrollbar *::-webkit-scrollbar-thumb:hover {
+        background: #555;
     }
 
     @media screen and (max-width: 1024px){

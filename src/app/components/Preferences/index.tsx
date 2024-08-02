@@ -1,6 +1,5 @@
 import Image from "next/image";
 import CertificateImage from "@/assets/images/certificate-section.jpg";
-import Paragraph from "@/components/Paragraph";
 import ShapeFrame from "@/components/ShapeFrame";
 
 const Preferences = () => {
@@ -20,19 +19,19 @@ const Preferences = () => {
 
                     <div className="font-semibold !text-xl lg:!text-lg !leading-[35px] lg:!leading-[40px] mr-2">
                         <div className="flex gap-4">
-                            <span className="bg-primary size-2 rounded-full shrink-0 mt-4"></span>
+                            <span className="bg-brand-primary size-2 rounded-full shrink-0 mt-4"></span>
                             <span>
                                 کسانی که به یادگیـری مهارت مهم و پردرآمد در ایران و خارج از کشور علاقه دارند.
                             </span>
                         </div>
                         <div className="flex gap-4">
-                            <span className="bg-primary size-2 rounded-full shrink-0 mt-4"></span>
+                            <span className="bg-brand-primary size-2 rounded-full shrink-0 mt-4"></span>
                             <span>
                                 کسانی که قصد دارند در ادامه‌ی مسیر حــرفه‌ای خود در زمینه برنامه‌نویسی فعالیت کنند.
                             </span>
                         </div>
                         <div className="flex gap-4">
-                            <span className="bg-primary size-2 rounded-full shrink-0 mt-4"></span>
+                            <span className="bg-brand-primary size-2 rounded-full shrink-0 mt-4"></span>
                             <span>
                                 کسانی که در حال افزایش سطح توانمندی خود با هدف مهاجرت شغلی یا تحصیلی هستند.
                             </span>
@@ -59,31 +58,31 @@ const Preferences = () => {
                     </div>
                     <div className="font-semibold !text-xl lg:!text-lg !leading-[35px] lg:!leading-[40px] mr-2">
                         <div className="flex gap-4">
-                            <span className="bg-primary size-2 rounded-full shrink-0 mt-4"></span>
+                            <span className="bg-brand-primary size-2 rounded-full shrink-0 mt-4"></span>
                             <span>
                                 کسانی که وقت کافی برای یادگیری مستمر و تمرین کافی ندارند.
                             </span>
                         </div>
                         <div className="flex gap-4">
-                            <span className="bg-primary size-2 rounded-full shrink-0 mt-4"></span>
+                            <span className="bg-brand-primary size-2 rounded-full shrink-0 mt-4"></span>
                             <span>
                                 افرادی که به کار ذهنی و حل مسئله علاقه‌ای ندارند.
                             </span>
                         </div>
                         <div className="flex gap-4">
-                            <span className="bg-primary size-2 rounded-full shrink-0 mt-4"></span>
+                            <span className="bg-brand-primary size-2 rounded-full shrink-0 mt-4"></span>
                             <span>
                                 کسانی که چالش و ریسک را در ازای پیشرفت ‌های بزرگ نمی‌پذیرند.
                             </span>
                         </div>
                         <div className="flex gap-4">
-                            <span className="bg-primary size-2 rounded-full shrink-0 mt-4"></span>
+                            <span className="bg-brand-primary size-2 rounded-full shrink-0 mt-4"></span>
                             <span>
                                 کسانی که بدون شناخت از این حوزه و فقط با انگیزه درآمد بالا قصد ورود دارند.
                             </span>
                         </div>
                         <div className="flex gap-4">
-                            <span className="bg-primary size-2 rounded-full shrink-0 mt-4"></span>
+                            <span className="bg-brand-primary size-2 rounded-full shrink-0 mt-4"></span>
                             <span>
                                 افـرادی که به دنبال یک‌شبه نتیجه گـرفتن هستند و تلاشی بـرای پیشرفت نمی‌کنند.
                             </span>

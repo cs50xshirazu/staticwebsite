@@ -1,31 +1,51 @@
 export {};
 
 declare global {
-    type Course = {
+    type CourseType = {
         image: string;
         title: string;
         link: string;
     }
 
-    type Sponsor = {
+    type SponsorType = {
+        id: number;
         title: string;
-        image: string;
+        photo: string;
+        icon?: string;
         link: string;
     }
 
-    type QuestionAnswer = {
+    type FaqType = {
+        id: number;
         title: string;
-        description: description;
+        answer: string;
     }
 
-    type Employee = {
+    type TeamType = {
+        id: number;
         name: string;
         job: string;
-        image : string;
-        socialMedias?: {
-            title: string,
+        photo: string;
+        category: string;
+        counter: number;
+        team_category: {
+            id: number,
+            team: string;
+            category: string;
+        }[],
+        team_socials: {
+            id: number,
+            team: string;
             link: string;
             icon: string;
+            alt: string;
         }[]
     }
+
+    type ApiPaginatedResponse<D> = {
+        count: number;
+        next: string;
+        previous: string;
+        results: D[];
+    };
 }

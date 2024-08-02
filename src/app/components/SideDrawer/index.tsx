@@ -15,7 +15,7 @@ const SideDrawer = () => {
         >
             <div onClick={(e) => e.stopPropagation()}
                  className="cursor-default group-[.side-drawer-open]:right-0 right-[-100%] transition-all duration-500 absolute top-0 w-[280px] xs:w-[300px] h-full bg-white">
-                <div className="p-6 w-full flex justify-between items-center bg-primary">
+                <div className="p-6 w-full flex justify-between items-center bg-brand-primary">
                     <div className="flex items-center gap-4">
                         <Image src={LogoImage} alt="logo" className="w-[30px] brightness-[10000%]" />
                         <span className="text-xl font-bold text-white">
@@ -32,24 +32,24 @@ const SideDrawer = () => {
                     </button>
                 </div>
                 <div className="px-8 pt-4 flex flex-col w-full gap-12 font-bold text-2xl mt-8">
-                <Link href="/#our-courses" className="flex items-center gap-4 hover:text-primary/80 transition-colors">
-                        <span className="size-3 bg-primary rounded-full"></span>
+                <Link href="/#our-courses" className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
+                        <span className="size-3 bg-brand-primary rounded-full"></span>
                         رویدادها و دوره‌ها
                     </Link>
-                    <Link href="/#frequently-asked-questions" className="flex items-center gap-4 hover:text-primary/80 transition-colors">
-                        <span className="size-3 bg-primary rounded-full"></span>
+                    <Link href="/#frequently-asked-questions" className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
+                        <span className="size-3 bg-brand-primary rounded-full"></span>
                             سوالات متداول
                     </Link>
-                    <Link href="/team" className="flex items-center gap-4 hover:text-primary/80 transition-colors">
-                        <span className="size-3 bg-primary rounded-full"></span>
+                    <Link href="/team" className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
+                        <span className="size-3 bg-brand-primary rounded-full"></span>
                             تیم ما
                     </Link>
-                    <Link href="/#spnsor" className="flex items-center gap-4 hover:text-primary/80 transition-colors">
-                        <span className="size-3 bg-primary rounded-full"></span>
+                    <Link href="/#spnsor" className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
+                        <span className="size-3 bg-brand-primary rounded-full"></span>
                             اسپانسرها
                     </Link>
-                    <Link href="https://blog.cs50xshiraz.ir/" className="flex items-center gap-4 hover:text-primary/80 transition-colors">
-                        <span className="size-3 bg-primary rounded-full"></span>
+                    <Link href="https://blog.cs50xshiraz.ir/" className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
+                        <span className="size-3 bg-brand-primary rounded-full"></span>
                            بلاگ 
                     </Link>
                 </div>

@@ -1,12 +1,14 @@
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
+import {nextui} from "@nextui-org/react";
 
 const config: Config = {
+    darkMode: "class",
     content: [
         "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-        "./node_modules/primereact/**/*.{js,ts,jsx,tsx}"
+        "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
     ],
     theme: {
         extend: {
@@ -36,8 +38,8 @@ const config: Config = {
                 }
             },
             colors: {
-                primary: {
-                    DEFAULT: "hsl(var(--color-primary) / <alpha-value>)"
+                "brand-primary": {
+                    DEFAULT: "hsl(var(--color-brand-primary) / <alpha-value>)"
                 },
                 "brand-green": {
                     DEFAULT: "hsl(var(--color-brand-green) / <alpha-value>)"
@@ -87,6 +89,7 @@ const config: Config = {
         }
     },
     plugins: [
+        nextui(),
         plugin(function({ addUtilities }) {
             addUtilities({
                 ".persian-number": {

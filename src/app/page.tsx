@@ -22,7 +22,7 @@ export default function Home() {
                     },
                     {
                         title: "سوالات متداول",
-                        link: "#frequently-asked-questions"
+                        link: "#frequently-asked-faqs"
                     },
                     {
                         title: "تیم ما",

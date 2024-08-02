@@ -15,7 +15,7 @@ const Footer = () => {
     return (
         <footer className="py-6 mt-[100px] relative">
             <Image src={FooterBgImage} className="object-cover -z-10" alt="footer-bg" fill />
-            <div className="bg-primary/90 -z-[5] absolute w-full h-full inset-0" />
+            <div className="bg-brand-primary/90 -z-[5] absolute w-full h-full inset-0" />
 
             <div className="container">
                 <DividerShape simple color="cream" />

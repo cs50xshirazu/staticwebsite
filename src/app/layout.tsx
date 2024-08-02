@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import "primeicons/primeicons.css";
+import TanstackQueryProvider from "@/providers/TanstackQueryProvider";
 
 const IRANYekanX = localFont({
     src: "../assets/fonts/IRANYekanX/IRANYekanXVF.woff2",
@@ -35,9 +37,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </head>
 
         <body className="font-iran-yekan-x overflow-x-hidden">
-
-        {children}
-
+        <TanstackQueryProvider>
+            {children}
+        </TanstackQueryProvider>
         </body>
         </html>
     );

@@ -3,52 +3,19 @@ import BackgroundPattern from "@/app/components/BackgroundPattern";
 import Navbar from "@/app/components/Navbar";
 import SideDrawer from "@/app/components/SideDrawer";
 import Header from "@/app/components/Header";
-import TeamDivider from "@/app/team/components/TeamDivider";
+import RenderTeams from "@/app/team/components/RenderTeams";
+import { dehydrate, HydrationBoundary, QueryClient } from "@tanstack/react-query";
+import customFetch from "@/utils/fetch";
+import { TeamsResponse } from "@/hooks/api/teams/useTeams";
 
-export default function Home() {
-
-    const employees: Employee[] = [
-        {
-            job: "برنامه نویس",
-            name: "نام و نام خوانوادگی",
-            image: "/images/employees/user.png"
-        },
-        {
-            job: "برنامه نویس",
-            name: "نام و نام خوانوادگی",
-            image: "/images/employees/user.png"
-        },
-        {
-            job: "برنامه نویس",
-            name: "نام و نام خوانوادگی",
-            image: "/images/employees/user.png"
-        },
-        {
-            job: "برنامه نویس",
-            name: "نام و نام خوانوادگی",
-            image: "/images/employees/user.png"
-        },
-        {
-            job: "برنامه نویس",
-            name: "نام و نام خوانوادگی",
-            image: "/images/employees/user.png"
-        },
-        {
-            job: "برنامه نویس",
-            name: "نام و نام خوانوادگی",
-            image: "/images/employees/user.png"
-        },
-        {
-            job: "برنامه نویس",
-            name: "نام و نام خوانوادگی",
-            image: "/images/employees/user.png"
-        },
-        {
-            job: "برنامه نویس",
-            name: "نام و نام خوانوادگی",
-            image: "/images/employees/user.png"
+export default async function Team() {
+    const queryClient = new QueryClient();
+    await queryClient.prefetchInfiniteQuery({
+        queryKey: ["teams"],
+        queryFn: async () => {
+            return customFetch<TeamsResponse>("teams/?limit=100&offset=0");
         }
-    ];
+    });
 
     return (
         <>
@@ -61,7 +28,7 @@ export default function Home() {
                     },
                     {
                         title: "سوالات متداول",
-                        link: "/#frequently-asked-questions"
+                        link: "/#frequently-asked-faqs"
                     },
                     {
                         title: "تیم ما",
@@ -74,15 +41,15 @@ export default function Home() {
                     {
                         title: "بلاگ",
                         link: "https://blog.cs50xshiraz.ir"
-                    },
+                    }
                 ]}
             />
             <SideDrawer />
             <Header />
             <main className="mt-[60px]">
-                <TeamDivider title="تیم توسعه" employees={employees} />
-                <TeamDivider title="تیم گرافیک" employees={employees} />
-                <TeamDivider title="تیم ادیت" employees={employees} />
+                <HydrationBoundary state={dehydrate(queryClient)}>
+                    <RenderTeams />
+                </HydrationBoundary>
                 <Footer />
             </main>
         </>
