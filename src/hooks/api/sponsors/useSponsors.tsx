@@ -7,7 +7,7 @@ const useSponsors = () => {
     return useQuery({
         queryKey: ["sponsors"],
         queryFn: async () => {
-            return customFetch<SponsorsResponse>("sponsors");
+            return customFetch<SponsorsResponse>("api/sponsors");
         }
     });
 };

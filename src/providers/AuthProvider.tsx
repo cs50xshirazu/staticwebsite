@@ -1,0 +1,17 @@
+import { SessionProvider } from "next-auth/react";
+import { auth } from "@/configs/auth";
+
+export type AuthProviderProps = {
+    children: React.ReactNode;
+}
+
+const AuthProvider = async ({ children }: AuthProviderProps) => {
+    const session = await auth();
+    return (
+        <SessionProvider session={session}>
+            {children}
+        </SessionProvider>
+    );
+};
+
+export default AuthProvider;

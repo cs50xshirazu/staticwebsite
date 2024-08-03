@@ -13,7 +13,7 @@ const RenderTeams = () => {
 
     return (
         <div>
-            <TeamDivider title="تیم توسعه" employees={renderTeams} />
+            <TeamDivider title="تیم توسعه" employees={renderTeams ?? []} />
         </div>
     );
 };

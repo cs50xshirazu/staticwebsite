@@ -8,7 +8,7 @@ const useSponsor = (id: number) => {
         enabled: id > 0,
         queryKey: ["sponsor", id],
         queryFn: async () => {
-            return customFetch<SponsorResponse>(`sponsors/${id}`);
+            return customFetch<SponsorResponse>(`api/sponsors/${id}`);
         }
     });
 };

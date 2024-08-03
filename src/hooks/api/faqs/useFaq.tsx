@@ -8,7 +8,7 @@ const useFaq = (id: number) => {
         enabled: id > 0,
         queryKey: ["faq", id],
         queryFn: async () => {
-            return customFetch<FaqResponse>(`qas/${id}`);
+            return customFetch<FaqResponse>(`api/qas/${id}`);
         }
     });
 };

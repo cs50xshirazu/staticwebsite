@@ -5,14 +5,16 @@ import Paragraph from "@/components/Paragraph";
 
 const Sponsors = () => {
 
-    const sponsors: Sponsor[] = [
+    const sponsors: SponsorType[] = [
         {
-            image: "/images/sponsors/shiraz-university.jpg",
+            id : 1,
+            photo: "/images/sponsors/shiraz-university.jpg",
             title: "دانشگاه شیراز",
             link: "https://shirazu.ac.ir/"
         },
         {
-            image: "/images/sponsors/sponser.png",
+            id : 2,
+            photo: "/images/sponsors/sponser.png",
             title: "ارسال درخواست اسپانسری",
             link: "https://sponsor.cs50xshiraz.ir"
         }

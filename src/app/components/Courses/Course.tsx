@@ -2,7 +2,7 @@ import ShapeFrame from "@/components/ShapeFrame";
 import Image from "next/image";
 import ShapeTitle from "@/components/ShapeTitle";
 
-export type CourseProps = Course & {}
+export type CourseProps = CourseType
 
 const Course = ({ image, link, title }: CourseProps) => {
     return (

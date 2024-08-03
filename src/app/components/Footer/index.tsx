@@ -6,10 +6,10 @@ import InstagramIconImage from "@/assets/icons/instagram.svg";
 
 import Cs50xShirazImage from "@/assets/images/brands/cs50xShiraz.svg";
 import ShirazUniversityImage from "@/assets/images/brands/shirazUniversity.svg";
-import ShirazUImage from "@/assets/images/brands/shirazu.svg";
 import FooterBgImage from "@/assets/images/footer-bg.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import Release from "@/app/components/Footer/Release";
 
 const Footer = () => {
     return (
@@ -57,9 +57,7 @@ const Footer = () => {
                         &copy;
 ‎                        2023-2024 تمامی حقوق برای CS50xShiraz محفوظ می باشد.
                     </div>
-                    {/*<div className="text-white max-sm:text-center">*/}
-                    {/*    ساخته شده با ♥ توسط <Link href='https://byeto.net' className="hover:underline" target="_blank">بایتو</Link>*/}
-                    {/*</div>*/}
+                    <Release />
                 </div>
             </div>
         </footer>

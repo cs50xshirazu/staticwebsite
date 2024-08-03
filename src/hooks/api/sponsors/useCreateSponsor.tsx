@@ -1,5 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
 import axios from "@/utils/axios";
+import { useSession } from "next-auth/react";
+import createAuthHeader from "@/utils/createAuthHeader";
 
 export type CreateSponsorRequest = {
     title: string;
@@ -9,6 +11,8 @@ export type CreateSponsorRequest = {
 }
 
 const useCreateSponsor = () => {
+    const session = useSession();
+
     return useMutation({
         mutationFn: async (variables: CreateSponsorRequest) => {
             await axios.post(`sponsors/`, {
@@ -17,7 +21,8 @@ const useCreateSponsor = () => {
                 photo: variables?.photo[0]
             }, {
                 headers: {
-                    "Content-Type": "multipart/form-data"
+                    "Content-Type": "multipart/form-data",
+                    ...createAuthHeader(session.data)
                 }
             });
         }

@@ -5,7 +5,7 @@ import BookImage from "@/assets/images/home2img.png";
 
 const Courses = () => {
 
-    const courses: Course[] = [
+    const courses: CourseType[] = [
         {
             image: "/images/courses/cs50x.jpg",
             link: "https://evnd.co/lvg3L",

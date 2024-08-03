@@ -7,7 +7,7 @@ const useTeams = () => {
     return useInfiniteQuery({
         queryKey: ["teams"],
         queryFn: async ({ pageParam }) => {
-            return customFetch<TeamsResponse>(`teams/?limit=${pageParam.limit}&offset=${pageParam.offset}`);
+            return customFetch<TeamsResponse>(`api/teams/?limit=${pageParam.limit}&offset=${pageParam.offset}`);
         },
         initialPageParam: {
             offset: 0,

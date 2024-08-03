@@ -1,5 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
 import axios from "@/utils/axios";
+import createAuthHeader from "@/utils/createAuthHeader";
+import { useSession } from "next-auth/react";
 
 export type CreateFaqRequest = {
     title: string;
@@ -7,9 +9,12 @@ export type CreateFaqRequest = {
 }
 
 const useCreateFaq = () => {
+    const session = useSession();
+
     return useMutation({
         mutationFn: async (variables: CreateFaqRequest) => {
-            await axios.post(`qas/`, variables);
+            console.log({ headers: createAuthHeader(session.data) });
+            await axios.post(`qas/`, variables, { headers: createAuthHeader(session.data) });
         }
     });
 };

@@ -13,8 +13,9 @@ export default async function Team() {
     await queryClient.prefetchInfiniteQuery({
         queryKey: ["teams"],
         queryFn: async () => {
-            return customFetch<TeamsResponse>("teams/?limit=100&offset=0");
-        }
+            return await customFetch<TeamsResponse>("api/teams/?limit=100&offset=0");
+        },
+        initialPageParam: {}
     });
 
     return (
