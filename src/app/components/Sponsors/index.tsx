@@ -39,9 +39,9 @@ const Sponsors = () => {
             </TitleBar>
 
             <Paragraph className="!text-center mt-[40px] !text-lg !font-bold px-8 !leading-[180%]">
-                با پذیرش نقش اسپانسر در ، شما به عنوان عضو ارزشمند در ترویج دانش و فرهنگ در جامعه شناخته خواهید شد.
+                با پذیرش نقش اسپانسر در CS50xShiraz ، شما به عنوان یک عضو ارزشمند در ترویج دانش و فرهنگ این جامعه شناخته خواهید شد.
                 <br />
-                ما منتظر همکاری با شما هستیم تا با هم، یک همایش علمی بی‌نظیر را برگزار کنیم.
+                ما منتظر همکاری با شما هستیم تا با هم، یک رویداد علمی بی‌نظیر را برگزار کنیم.
             </Paragraph>
 
             <div className="mt-[40px] mb-[30px] flex justify-center items-center gap-12 max-sm:flex-wrap">
