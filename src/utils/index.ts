@@ -1,10 +1,27 @@
 export const toggleSideDrawer = () => {
     const sideDrawerElement = document.querySelector(".side-drawer") as HTMLDivElement;
-    sideDrawerElement.classList.toggle("side-drawer-open");
-    lockWindowScroll()
+
+    const isOpen = sideDrawerElement.classList.contains("side-drawer-open");
+
+    if (isOpen) {
+        sideDrawerElement.classList.remove("side-drawer-open");
+        lockWindowScroll(false);
+    } else {
+        sideDrawerElement.classList.add("side-drawer-open");
+        lockWindowScroll(true);
+    }
 };
 
-export const lockWindowScroll = () => {
+export const lockWindowScroll = (state?: boolean) => {
     const bodyEl = document.querySelector("body") as HTMLBodyElement;
-    bodyEl.classList.toggle("overflow-hidden");
+    if (state !== undefined) {
+        if (state) {
+            bodyEl.classList.add("overflow-hidden");
+        } else {
+            bodyEl.classList.toggle("overflow-hidden");
+        }
+    } else {
+        bodyEl.classList.toggle("overflow-hidden");
+    }
+
 };
