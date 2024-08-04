@@ -8,13 +8,19 @@ const Sponsors = () => {
     const sponsors: SponsorType[] = [
         {
             id : 1,
-            photo: "/images/sponsors/shiraz-university.jpg",
+            photo: "/images/sponsors/shirazu.png",
             title: "دانشگاه شیراز",
             link: "https://shirazu.ac.ir/"
         },
         {
             id : 2,
-            photo: "/images/sponsors/sponser.png",
+            photo: "/images/sponsors/iranserver.png",
+            title: "ایران سرور",
+            link: "https://www.iranserver.com/"
+        },
+        {
+            id : 3,
+            photo: "/images/sponsors/spnsr.png",
             title: "ارسال درخواست اسپانسری",
             link: "https://sponsor.cs50xshiraz.ir"
         }
