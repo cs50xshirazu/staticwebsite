@@ -1,13 +1,15 @@
-import { Button } from "@mui/material";
+import { auth } from "@/configs/auth";
+import { redirect } from "next/navigation";
 
-const Admin = () => {
+const Admin = async () => {
+    const session = await auth();
+    if (!session) redirect("/admin/auth/signin");
+
     return (
         <main>
-            <Button variant="contained">
-                Hello World
-            </Button>
+
         </main>
-    )
-}
+    );
+};
 
 export default Admin;
