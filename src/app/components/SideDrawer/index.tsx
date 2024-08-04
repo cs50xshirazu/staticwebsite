@@ -32,25 +32,30 @@ const SideDrawer = () => {
                     </button>
                 </div>
                 <div className="px-8 pt-4 flex flex-col w-full gap-12 font-bold text-2xl mt-8">
-                <Link href="/#our-courses" className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
+                    <Link onClick={toggleSideDrawer} href="/#our-courses"
+                          className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
                         <span className="size-3 bg-brand-primary rounded-full"></span>
                         رویدادها و دوره‌ها
                     </Link>
-                    <Link href="/#frequently-asked-questions" className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
+                    <Link onClick={toggleSideDrawer} href="/#frequently-asked-questions"
+                          className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
                         <span className="size-3 bg-brand-primary rounded-full"></span>
-                            سوالات متداول
+                        سوالات متداول
                     </Link>
-                    <Link href="/team" className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
+                    <Link onClick={toggleSideDrawer} href="/team"
+                          className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
                         <span className="size-3 bg-brand-primary rounded-full"></span>
-                            تیم ما
+                        تیم ما
                     </Link>
-                    <Link href="/#spnsor" className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
+                    <Link onClick={toggleSideDrawer} href="/#spnsor"
+                          className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
                         <span className="size-3 bg-brand-primary rounded-full"></span>
-                            اسپانسرها
+                        اسپانسرها
                     </Link>
-                    <Link href="https://blog.cs50xshiraz.ir/" className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
+                    <Link onClick={toggleSideDrawer} href="https://blog.cs50xshiraz.ir/"
+                          className="flex items-center gap-4 hover:text-brand-primary/80 transition-colors">
                         <span className="size-3 bg-brand-primary rounded-full"></span>
-                           بلاگ 
+                        بلاگ
                     </Link>
                 </div>
             </div>
