@@ -38,7 +38,7 @@ const SponsorCard = ({
                     </div>
                 </CardBody>
                 <CardFooter className="text-small justify-between">
-                    <b>{title}</b>
+                    <b className="text-start line-clamp-2 text-ellipsis">{title}</b>
                     <Button
                         onPress={onDeleteButtonClick}
                         variant="light"
