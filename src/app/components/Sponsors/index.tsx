@@ -1,34 +1,18 @@
+"use client";
+
 import TitleBar from "@/components/TitleBar";
 import Sponsor from "@/app/components/Sponsors/Sponsor";
 import DividerShape from "@/components/DividerShape";
 import Paragraph from "@/components/Paragraph";
+import useSponsors from "@/hooks/api/sponsors/useSponsors";
+import { useMemo } from "react";
 
 const Sponsors = () => {
+    const { data: sponsors, isLoading } = useSponsors();
 
-    const sponsors: SponsorType[] = [
-        {
-            id : 1,
-            photo: "/images/sponsors/shirazu.png",
-            title: "دانشگاه شیراز",
-            link: "https://shirazu.ac.ir/"
-        },
-        {
-            id : 2,
-            photo: "/images/sponsors/iranserver.png",
-            title: "ایران سرور",
-            link: "https://www.iranserver.com/"
-        },
-        {
-            id : 3,
-            photo: "/images/sponsors/spnsr.png",
-            title: "ارسال درخواست اسپانسری",
-            link: "https://sponsor.cs50xshiraz.ir"
-        }
-    ];
-
-    const renderSponsors = () => {
-        return sponsors.map((sponsor) => <Sponsor {...sponsor} key={sponsor.title}/>);
-    };
+    const renderSponsors = useMemo(() => {
+        return sponsors?.map((sponsor) => <Sponsor {...sponsor} key={sponsor.title} />);
+    }, [sponsors]);
 
     return (
         <section className="container mt-[40px]" id="spnsor">
@@ -45,7 +29,7 @@ const Sponsors = () => {
             </Paragraph>
 
             <div className="mt-[40px] mb-[30px] flex justify-center items-center gap-12 max-sm:flex-wrap">
-                {renderSponsors()}
+                {renderSponsors}
             </div>
 
             <DividerShape simple />
