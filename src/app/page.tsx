@@ -9,10 +9,11 @@ import BackgroundPattern from "@/app/components/BackgroundPattern";
 import Navbar from "@/app/components/Navbar";
 import SideDrawer from "@/app/components/SideDrawer";
 import Header from "@/app/components/Header";
+import AnalyticsProvider from "@/providers/AnalyticsProvider";
 
-export default function Home() {
+export default async function Home() {
     return (
-        <>
+        <AnalyticsProvider>
             <BackgroundPattern />
             <Navbar
                 links={[
@@ -35,8 +36,8 @@ export default function Home() {
                     {
                         title: "بلاگ",
                         link: "https://blog.cs50xshiraz.ir"
-                    },
-        
+                    }
+
                 ]}
             />
             <SideDrawer />
@@ -50,6 +51,6 @@ export default function Home() {
                 <Faq />
                 <Footer />
             </main>
-        </>
+        </AnalyticsProvider>
     );
 }

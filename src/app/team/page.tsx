@@ -7,6 +7,7 @@ import RenderTeams from "@/app/team/components/RenderTeams";
 import { dehydrate, HydrationBoundary, QueryClient } from "@tanstack/react-query";
 import customFetch from "@/utils/fetch";
 import { TeamsResponse } from "@/hooks/api/teams/useTeams";
+import AnalyticsProvider from "@/providers/AnalyticsProvider";
 
 export default async function Team() {
     const queryClient = new QueryClient();
@@ -19,7 +20,7 @@ export default async function Team() {
     });
 
     return (
-        <>
+        <AnalyticsProvider>
             <BackgroundPattern />
             <Navbar
                 links={[
@@ -53,6 +54,6 @@ export default async function Team() {
                 </HydrationBoundary>
                 <Footer />
             </main>
-        </>
+        </AnalyticsProvider>
     );
 }
