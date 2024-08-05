@@ -10,6 +10,7 @@ import FooterBgImage from "@/assets/images/footer-bg.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import Release from "@/app/components/Footer/Release";
+import Sponsors from "@/app/components/Footer/Sponsors";
 
 const Footer = () => {
     return (
@@ -20,14 +21,7 @@ const Footer = () => {
             <div className="container">
                 <DividerShape simple color="cream" />
                 <div className="px-4 py-11 flex items-center justify-between max-sm:flex-col-reverse max-sm:gap-8">
-                    <div className="flex items-center gap-4">
-                        <a href="#" className="shrink-0">
-                            <Image className="size-[35px] sm:size-[40px] md:size-[50px]" src={Cs50xShirazImage} alt="cs50xshiraz" />
-                        </a>
-                        <a href="#" className="shrink-0">
-                            <Image className="size-[35px] sm:size-[40px] md:size-[50px]" src={ShirazUniversityImage} alt="shiraz-university" />
-                        </a>
-                    </div>
+                    <Sponsors />
                     <div className="flex items-center gap-6 sm:gap-12 md:gap-16 max-sm:flex-col">
                     <div className="text-white font-bold flex items-center gap-6 md:gap-10 md:text-lg">
                             <a href="https://t.me/cs50xshiraz_support">مشاوره (تلگرام)</a>
