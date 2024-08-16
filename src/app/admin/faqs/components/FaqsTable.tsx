@@ -40,7 +40,11 @@ const FaqsTable = () => {
             return {
                 key: item.id,
                 title: item.title,
-                answer: item.answer,
+                answer: (
+                    <p className="max-w-[80%] leading-8 text-foreground-500">
+                        {item.answer}
+                    </p>
+                ),
                 actions: (
                     <div className="relative flex items-center gap-2">
                         <Tooltip className="dark text-foreground" content="ویرایش سوال">
@@ -102,9 +106,9 @@ const FaqsTable = () => {
                 </TableHeader>
                 <TableBody items={rows ?? []}>
                     {(item) => (
-                        <TableRow key={item.key}>
+                        <TableRow key={item.key} className="even:bg-content2/50">
                             {(columnKey) => (
-                                <TableCell className="text-foreground">
+                                <TableCell className="text-foreground py-4 first:!rounded-r-xl last:!rounded-l-xl">
                                     {getKeyValue(item, columnKey)}
                                 </TableCell>
                             )}

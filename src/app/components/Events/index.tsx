@@ -1,24 +1,21 @@
+"use client";
+
 import TitleBar from "@/components/TitleBar";
-import Course from "@/app/components/Courses/Course";
 import Image from "next/image";
 import BookImage from "@/assets/images/home2img.png";
+import useEvents from "@/hooks/api/events/useEvents";
+import { useMemo } from "react";
+import Event from "@/app/components/Events/Event";
 
-const Courses = () => {
+const Events = () => {
+    const { data: events } = useEvents();
 
-    const courses: CourseType[] = [
-        {
-            image: "/images/courses/cs50x.jpg",
-            link: "https://evnd.co/lvg3L",
-            title: "دوره مبانی علوم کامپیوتر هاروارد (CS50x)"
-        }
-    ];
-
-    const renderCourses = () => {
-        return courses.map((course) => <Course {...course} key={course.title} />);
-    };
+    const renderEvents = useMemo(() => {
+        return events?.map((event) => <Event {...event} key={event.title} />);
+    }, [events]);
 
     return (
-        <section className="mt-[40px]" id="our-courses">
+        <section className="mt-[40px]" id="our-events">
             <TitleBar className="container gap-6">
                 <span className="font-black whitespace-nowrap  text-xl sm:text-2xl">
                       رویدادها و دوره ها 
@@ -26,7 +23,7 @@ const Courses = () => {
             </TitleBar>
 
             <div className="container mt-[40px] flex justify-center items-center">
-                {renderCourses()}
+                {renderEvents}
             </div>
 
             <div className="w-full h-[400px] sm:h-[500px] relative mt-[40px]">
@@ -37,4 +34,4 @@ const Courses = () => {
     );
 };
 
-export default Courses;
+export default Events;

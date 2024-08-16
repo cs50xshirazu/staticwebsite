@@ -1,8 +1,9 @@
 export {};
 
 declare global {
-    type CourseType = {
-        image: string;
+    type EventType = {
+        id: number;
+        photo: string;
         title: string;
         link: string;
     }

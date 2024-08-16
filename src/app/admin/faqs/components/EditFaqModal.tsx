@@ -69,7 +69,6 @@ const EditFaqModal = ({ onOpenChange, isOpen, id, onClose }: EditFaqModalProps) 
                         >
                             <ModalHeader className="flex gap-1 text-foreground">
                                 ویرایش سوال
-                                <span>{faq.title}</span>
                             </ModalHeader>
                             <ModalBody>
                                 <div className="flex flex-col gap-6">
@@ -83,7 +82,7 @@ const EditFaqModal = ({ onOpenChange, isOpen, id, onClose }: EditFaqModalProps) 
                                     <Textarea
                                         className="text-foreground"
                                         variant="bordered"
-                                        dir="ltr"
+                                        dir="rtl"
                                         label="جواب سوال"
                                         isInvalid={!!errors.answer}
                                         {...register("answer", { required: true })}

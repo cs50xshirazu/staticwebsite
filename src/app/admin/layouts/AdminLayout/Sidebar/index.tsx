@@ -10,6 +10,7 @@ const Sidebar = () => {
                 <div className="mt-8 flex flex-col gap-3">
                     <SidebarItem text="داشبورد" icon="pi-home" link="/admin" />
                     <SidebarItem text="اسپانسر ها" icon="pi-star" link="/admin/sponsors" />
+                    <SidebarItem text="رویداد ها" icon="pi-calendar" link="/admin/events" />
                     <SidebarItem text="اعضای تیم" icon="pi-user" link="/admin/teams" />
                     <SidebarItem text="سوالات متداول" icon="pi-question" link="/admin/faqs" />
                     <SidebarItem text="تنظیمات" icon="pi-cog" link="/admin/setting" />

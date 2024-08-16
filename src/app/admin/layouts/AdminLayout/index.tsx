@@ -12,7 +12,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
             <Sidebar />
             <div className="flex-1">
                 <Navbar />
-                <div className="h-[calc(100%-80px)] px-[40px] pt-8">
+                <div className="h-[calc(100%-80px)] overflow-y-auto pb-8 px-[40px] pt-8">
                     {children}
                 </div>
             </div>

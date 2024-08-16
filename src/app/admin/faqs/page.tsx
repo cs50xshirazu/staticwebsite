@@ -1,21 +1,19 @@
 import LoadingIndicator from "@/app/admin/components/LoadingIndicator";
 import FaqsTable from "@/app/admin/faqs/components/FaqsTable";
 import CreateFaqButton from "@/app/admin/faqs/components/CreateFaqButton";
-import { auth } from "@/configs/auth";
-import { redirect } from "next/navigation";
+import AuthValidationProvider from "@/providers/AuthValidationProvider";
+import SectionTitle from "@/app/admin/components/SectionTitle";
 
 const FaqsPage = async () => {
-    const session = await auth()
-    if(!session) redirect("/admin/auth/signin");
-
     return (
-        <>
+        <AuthValidationProvider>
             <LoadingIndicator queries={["faqs"]} />
+            <SectionTitle title="سوالات متداول" />
             <div>
                 <FaqsTable />
                 <CreateFaqButton />
             </div>
-        </>
+        </AuthValidationProvider>
     );
 };
 

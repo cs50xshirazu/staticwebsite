@@ -22,8 +22,8 @@ const About = () => {
             <DividerShape simple />
             <div className="flex max-lg:flex-col-reverse gap-14 mt-[40px]">
                 <VideoSection />
-                <div className="flex-1">
-                    <ShapeTitle className="py-9 sm:py-11 w-fit" textClassName="text-brand-cream text-xl sm:text-2xl font-bold">
+                <div className="flex-1 max-lg:flex items-center justify-center flex-col">
+                    <ShapeTitle className="py-9 max-lg:!py-8 sm:py-11 w-fit" textClassName="text-brand-cream text-xl sm:text-2xl font-bold">
                         <span className="flex gap-2 items-center">
                             <span className="font-geo-slab-703">
                                 CS50x SHIRAZ
@@ -31,7 +31,7 @@ const About = () => {
                             چیست؟
                         </span>
                     </ShapeTitle>
-                    <Paragraph className="mt-6">
+                    <Paragraph className="mt-6 max-lg:text-center">
                         CS50 دوره آموزش مقدماتی برنامه نویسی و مبانی علوم کامپیوتر هاروارد است که هرساله علاوه بر
                         دانشگاه هاروارد و یِل، در سایر نقاط دنیا توسط نمایندگان محلی دارای لایسنس برگزار می‌شود.
                     </Paragraph>

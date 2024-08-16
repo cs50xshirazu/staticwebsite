@@ -13,7 +13,6 @@ const useCreateFaq = () => {
 
     return useMutation({
         mutationFn: async (variables: CreateFaqRequest) => {
-            console.log({ headers: createAuthHeader(session.data) });
             await axios.post(`qas/`, variables, { headers: createAuthHeader(session.data) });
         }
     });

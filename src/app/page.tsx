@@ -3,13 +3,13 @@ import Features from "@/app/components/Features";
 import Preferences from "@/app/components/Preferences";
 import Faq from "@/app/components/Faq";
 import Footer from "@/app/components/Footer";
-import Courses from "@/app/components/Courses";
 import Sponsors from "@/app/components/Sponsors";
 import BackgroundPattern from "@/app/components/BackgroundPattern";
 import Navbar from "@/app/components/Navbar";
 import SideDrawer from "@/app/components/SideDrawer";
 import Header from "@/app/components/Header";
 import AnalyticsProvider from "@/providers/AnalyticsProvider";
+import Events from "@/app/components/Events";
 
 export default async function Home() {
     return (
@@ -45,7 +45,7 @@ export default async function Home() {
             <main className="">
                 <About />
                 <Features />
-                <Courses />
+                <Events />
                 <Sponsors />
                 <Preferences />
                 <Faq />

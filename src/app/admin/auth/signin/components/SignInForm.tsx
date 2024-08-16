@@ -43,7 +43,6 @@ const SignInForm = () => {
             toast.success("با موفقیت وارد شدید");
             router.push("/admin");
         } catch (e) {
-            console.log(e);
             toast.error("خطایی رخ داده است");
         }
     };
@@ -71,6 +70,7 @@ const SignInForm = () => {
                     variant="bordered"
                     isInvalid={!!errors.email}
                     errorMessage={errors.email?.message}
+                    autoComplete="username"
                     {...register("email")}
                 />
                 <Input
@@ -86,6 +86,7 @@ const SignInForm = () => {
                     variant="bordered"
                     isInvalid={!!errors.password}
                     errorMessage={errors.password?.message}
+                    autoComplete="current-password"
                     {...register("password")}
                 />
                 <Button

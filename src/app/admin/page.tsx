@@ -1,14 +1,12 @@
-import { auth } from "@/configs/auth";
-import { redirect } from "next/navigation";
+import AuthValidationProvider from "@/providers/AuthValidationProvider";
 
 const Admin = async () => {
-    const session = await auth();
-    if (!session) redirect("/admin/auth/signin");
-
     return (
-        <main>
+        <AuthValidationProvider>
+            <main>
 
-        </main>
+            </main>
+        </AuthValidationProvider>
     );
 };
 

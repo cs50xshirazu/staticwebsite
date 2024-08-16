@@ -61,7 +61,7 @@ const AddFaqModal = ({ onOpenChange, isOpen, onClose }: AddFaqModalProps) => {
                                 isRequired
                                 className="text-foreground"
                                 variant="bordered"
-                                dir="ltr"
+                                dir="rtl"
                                 label="پاسخ سوال"
                                 isInvalid={!!errors.answer}
                                 {...register("answer", { required: true })}
