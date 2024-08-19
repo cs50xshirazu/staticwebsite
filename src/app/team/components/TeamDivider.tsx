@@ -18,12 +18,12 @@ const TeamDivider = ({ employees, title }: TeamDividerProps) => {
     return (
         <div className="container">
             <TitleBar className="gap-6">
-                <span className="font-black whitespace-nowrap  text-xl sm:text-2xl">
+                <span className="font-black whitespace-nowrap text-xl sm:text-2xl">
                     {title}
                 </span>
             </TitleBar>
             <div
-                className="container mt-[40px] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 pt-[80px] lg:pt-[120px] pb-[60px] justify-items-stretch gap-x-6 sm:gap-x-10 gap-y-[95px] sm:gap-y-[110px] lg:gap-y-[170px]">
+                className="container grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-items-stretch gap-x-6 sm:gap-x-10 py-16">
                 {renderEmployees}
             </div>
         </div>

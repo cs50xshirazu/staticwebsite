@@ -11,12 +11,12 @@ const useTeams = () => {
         },
         initialPageParam: {
             offset: 0,
-            limit: 10
+            limit: 100
         },
         getNextPageParam: (lastPage, pages) => {
             const page = pages.length + 1;
 
-            const limit = 10;
+            const limit = 100;
 
             const nextPageParams: any = {
                 offset: page * limit - limit,

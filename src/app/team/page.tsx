@@ -2,7 +2,7 @@ import Footer from "@/app/components/Footer";
 import BackgroundPattern from "@/app/components/BackgroundPattern";
 import Navbar from "@/app/components/Navbar";
 import SideDrawer from "@/app/components/SideDrawer";
-import Header from "@/app/components/Header";
+import Header from "./components/Header";
 import RenderTeams from "@/app/team/components/RenderTeams";
 import { dehydrate, HydrationBoundary, QueryClient } from "@tanstack/react-query";
 import customFetch from "@/utils/fetch";

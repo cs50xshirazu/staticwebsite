@@ -25,14 +25,16 @@ declare global {
     type TeamType = {
         id: number;
         name: string;
-        job: string;
+        job_elmi: string | null;
+        job_tech: string | null;
+        job_marketing: string | null;
+        job_executive: string | null;
+        job_mohtava: string | null;
         photo: string;
-        category: string;
         counter: number;
-        team_category: {
+        team_categories: {
             id: number,
-            team: string;
-            category: string;
+            name: string;
         }[],
         team_socials: {
             id: number,
