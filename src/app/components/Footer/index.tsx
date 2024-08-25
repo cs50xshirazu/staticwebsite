@@ -3,9 +3,6 @@ import GithubIconImage from "@/assets/icons/github.svg";
 import TwitterIconImage from "@/assets/icons/twitter.svg";
 import LinkedinIconImage from "@/assets/icons/linkedin.svg";
 import InstagramIconImage from "@/assets/icons/instagram.svg";
-
-import Cs50xShirazImage from "@/assets/images/brands/cs50xShiraz.svg";
-import ShirazUniversityImage from "@/assets/images/brands/shirazUniversity.svg";
 import FooterBgImage from "@/assets/images/footer-bg.jpg";
 import Image from "next/image";
 import Link from "next/link";
@@ -33,13 +30,13 @@ const Footer = () => {
                             <Link target="_blank" href="https://github.com/cs50xshirazu" className="hover:brightness-150 transition-all">
                                 <Image src={GithubIconImage} alt="github" className="size-[20px] md:size-[25px]" />
                             </Link>
-                            <Link target="_blank" href="#" className="hover:brightness-150 transition-all">
+                            <Link target="_blank" href="https://twitter.com/cs50xshiraz/" className="hover:brightness-150 transition-all">
                                 <Image src={TwitterIconImage} alt="twitter" className="size-[20px] md:size-[25px]" />
                             </Link>
                             <Link target="_blank" href="https://www.instagram.com/cs50xshiraz/" className="hover:brightness-150 transition-all">
                                 <Image src={InstagramIconImage} alt="instagram" className="size-[20px] md:size-[25px]" />
                             </Link>
-                            <Link target="_blank" href="#" className="hover:brightness-150 transition-all">
+                            <Link target="_blank" href="https://www.linkedin.com/company/cs50xshiraz/" className="hover:brightness-150 transition-all">
                                 <Image src={LinkedinIconImage} alt="linkedin" className="size-[20px] md:size-[25px]" />
                             </Link>
                         </div>
