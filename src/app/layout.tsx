@@ -35,6 +35,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
             <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#820000" />
             <meta name="msapplication-TileColor" content="#820000" />
+            <meta name="enamad" content="59741290" />
         </head>
 
         <body className="font-iran-yekan-x overflow-x-hidden">
