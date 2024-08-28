@@ -13,7 +13,7 @@ const RenderTeams = () => {
             employee: TeamType
         }[] = [];
 
-        const items = teams?.pages.flatMap(item => item.results).flat().filter(item => item.photo !== null);
+        const items = teams?.results.filter(item => item.photo !== null);
 
         items?.forEach(item => {
             item.team_categories.forEach(category => {
@@ -26,7 +26,10 @@ const RenderTeams = () => {
 
         const grouped = Object.groupBy(employeesGroups, ({ categoryName }) => categoryName);
 
-        return Object.keys(grouped).map(categoryName => {
+        return Object.keys(grouped).sort((a, b) => {
+            if (a === "مدرسین" || a === "تیم مدیریت" || a === "تیم فنی") return -1;
+            return 1;
+        }).map(categoryName => {
             return (
                 <TeamDivider
                     key={categoryName}

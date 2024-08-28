@@ -1,29 +1,16 @@
-import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import customFetch from "@/utils/fetch";
+import { useCategoryStore } from "@/stores";
 
 export type TeamsResponse = ApiPaginatedResponse<TeamType>;
 
 const useTeams = () => {
-    return useInfiniteQuery({
-        queryKey: ["teams"],
-        queryFn: async ({ pageParam }) => {
-            return customFetch<TeamsResponse>(`api/teams/?limit=${pageParam.limit}&offset=${pageParam.offset}`);
-        },
-        initialPageParam: {
-            offset: 0,
-            limit: 100
-        },
-        getNextPageParam: (lastPage, pages) => {
-            const page = pages.length + 1;
+    const { selectedCategory } = useCategoryStore();
 
-            const limit = 100;
-
-            const nextPageParams: any = {
-                offset: page * limit - limit,
-                limit
-            };
-
-            return lastPage?.next ? nextPageParams : undefined;
+    return useQuery({
+        queryKey: ["teams", selectedCategory],
+        queryFn: async () => {
+            return customFetch<TeamsResponse>(`api/teams/?limit=100&offset=0&category_id=${selectedCategory}`, { next: { revalidate: 3600 } });
         }
     });
 };

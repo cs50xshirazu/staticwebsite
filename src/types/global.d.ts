@@ -25,6 +25,7 @@ declare global {
     type TeamType = {
         id: number;
         name: string;
+        ordering: number;
         job_elmi: string | null;
         job_tech: string | null;
         job_marketing: string | null;
@@ -43,6 +44,11 @@ declare global {
             icon: string;
             alt: string;
         }[]
+    }
+
+    type TeamCategoryType = {
+        id: number;
+        name: string;
     }
 
     type ApiPaginatedResponse<D> = {

@@ -11,12 +11,9 @@ import AnalyticsProvider from "@/providers/AnalyticsProvider";
 
 export default async function Team() {
     const queryClient = new QueryClient();
-    await queryClient.prefetchInfiniteQuery({
-        queryKey: ["teams"],
-        queryFn: async () => {
-            return await customFetch<TeamsResponse>("api/teams/?limit=100&offset=0");
-        },
-        initialPageParam: {}
+    await queryClient.prefetchQuery({
+        queryKey: ["teams", ""],
+        queryFn: async () => customFetch<TeamsResponse>("api/teams/?limit=100&offset=0&category_id=", { next: { revalidate: 3600 } })
     });
 
     return (
