@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/cs50xshiraz.iml" filepath="$PROJECT_DIR$/.idea/cs50xshiraz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cs50xshiraz-api/.idea/cs50xshiraz-api.iml" filepath="$PROJECT_DIR$/../cs50xshiraz-api/.idea/cs50xshiraz-api.iml" />
     </modules>
   </component>
 </project>
