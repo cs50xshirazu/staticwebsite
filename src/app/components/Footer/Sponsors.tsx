@@ -26,6 +26,20 @@ const Sponsors = () => {
     return (
         <div className="flex items-center gap-4">
             {renderSponsors}
+            <Link
+                referrerPolicy="origin"
+                target="_blank"
+                href="https://trustseal.enamad.ir/?id=522399&Code=o8fqvvZMjohX11ANciXEsgcm2YoIl6av"
+                className="shrink-0 size-[35px] sm:size-[40px] md:size-[50px] relative"
+            >
+                <Image
+                    referrerPolicy="origin"
+                    src="https://trustseal.enamad.ir/logo.aspx?id=522399&Code=o8fqvvZMjohX11ANciXEsgcm2YoIl6av"
+                    alt=""
+                    fill
+                    style={{ cursor: 'pointer' }}
+                />
+            </Link>
         </div>
     );
 };

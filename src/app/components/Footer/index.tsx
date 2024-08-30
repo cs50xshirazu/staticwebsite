@@ -27,20 +27,7 @@ const Footer = () => {
                             <a href="tel:989353554898">تماس با ما</a>
                         </div>
                         <div className="flex justify-start items-center gap-4 w-fit">
-                            <Link
-                                referrerPolicy="origin"
-                                target="_blank"
-                                href="https://trustseal.enamad.ir/?id=522399&Code=o8fqvvZMjohX11ANciXEsgcm2YoIl6av"
-                                className="hover:brightness-150 transition-all"
-                            >
-                                <Image
-                                    referrerPolicy="origin"
-                                    src="https://trustseal.enamad.ir/logo.aspx?id=522399&Code=o8fqvvZMjohX11ANciXEsgcm2YoIl6av"
-                                    alt=""
-                                    style={{ cursor: 'pointer' }}
-                                    className="size-[20px] md:size-[25px]"
-                                />
-                            </Link>
+
                             <Link target="_blank" href="https://github.com/cs50xshirazu"
                                   className="hover:brightness-150 transition-all">
                                 <Image src={GithubIconImage} alt="github" className="size-[20px] md:size-[25px]" />

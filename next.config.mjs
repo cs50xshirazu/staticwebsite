@@ -3,8 +3,12 @@ const nextConfig = {
     images: {
         remotePatterns: [
             {
-                hostname: "api.cs50xshiraz.ir",
-                protocol: "https"
+                protocol: "https",
+                hostname: "api.cs50xshiraz.ir"
+            },
+            {
+                protocol: "https",
+                hostname: "trustseal.enamad.ir"
             }
         ]
     },
