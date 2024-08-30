@@ -25,7 +25,6 @@ const Sponsors = () => {
 
     return (
         <div className="flex items-center gap-4">
-            {renderSponsors}
             <Link
                 referrerPolicy="origin"
                 target="_blank"
@@ -36,10 +35,12 @@ const Sponsors = () => {
                     referrerPolicy="origin"
                     src="https://trustseal.enamad.ir/logo.aspx?id=522399&Code=o8fqvvZMjohX11ANciXEsgcm2YoIl6av"
                     alt=""
-                    fill
+                    width={50} // Adjust to the desired size
+                    height={50} // Adjust to the desired size
                     style={{ cursor: 'pointer' }}
                 />
             </Link>
+            {renderSponsors}
         </div>
     );
 };
