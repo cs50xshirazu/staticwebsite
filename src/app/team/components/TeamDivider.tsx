@@ -23,7 +23,7 @@ const TeamDivider = ({ employees, title }: TeamDividerProps) => {
                 </span>
             </TitleBar>
             <div
-                className="container grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-items-stretch gap-x-6 sm:gap-x-10 py-16">
+                className="container grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-items-stretch items-baseline gap-x-6 sm:gap-x-10 py-16 gap-y-6">
                 {renderEmployees}
             </div>
         </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import DividerShape from "@/components/DividerShape";
-import ShapeTitle from "@/components/ShapeTitle";
+import LinkedinImage from "@/assets/icons/linkedin-footer.svg";
+import Link from "next/link";
 
 export type EmployeeProps = TeamType
 
@@ -9,6 +9,7 @@ const Employee = ({
                       team_socials,
                       team_categories,
                       id,
+                      linkedin,
                       photo
                   }: EmployeeProps) => {
     return (
@@ -25,6 +26,20 @@ const Employee = ({
                    {name}
                 </span>
             </div>
+
+            <div className={`w-full flex justify-center items-center gap-4 -translate-y-4 ${!linkedin ? 'grayscale opacity-60' : ''}`}>
+
+                {linkedin ? (
+                    <Link href={linkedin}>
+                        <Image src={LinkedinImage} alt="linkedin" className="w-6" />
+                    </Link>
+                ) : (
+                    <div>
+                        <Image src={LinkedinImage} alt="linkedin" className="w-6" />
+                    </div>
+                )}
+            </div>
+
         </div>
     );
 };
