@@ -75,6 +75,7 @@ const VideoSection = () => {
             <iframe
                 className="w-full h-full"
                 src="https://www.aparat.com/video/video/embed/videohash/ekcv50j/vt/frame"
+                // @ts-ignore
                 allowFullScreen="true"
                 webkitallowfullscreen="true"
                 mozallowfullscreen="true"
