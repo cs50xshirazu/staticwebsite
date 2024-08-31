@@ -33,6 +33,7 @@ declare global {
         job_mohtava: string | null;
         photo: string;
         counter: number;
+        linkedin?: string;
         team_categories: {
             id: number,
             name: string;
