@@ -11,7 +11,8 @@ const Sponsors = () => {
     const renderSponsors = useMemo(() => {
         return sponsors?.filter(sponsor => sponsor.icon !== null).map((sponsor) => {
             return (
-                <Link key={sponsor.id} href={sponsor.link} className="shrink-0 size-[35px] sm:size-[40px] md:size-[50px] relative">
+                <Link key={sponsor.id} href={sponsor.link}
+                      className="shrink-0 size-[35px] sm:size-[40px] md:size-[50px] relative">
                     <Image
                         className="w-full"
                         src={sponsor.icon!}
@@ -25,21 +26,12 @@ const Sponsors = () => {
 
     return (
         <div className="flex items-center gap-4">
-            <Link
+            <a referrerPolicy="origin" target="_blank"
+               href="https://trustseal.enamad.ir/?id=522399&amp;Code=o8fqvvZMjohX11ANciXEsgcm2YoIl6av"><img
                 referrerPolicy="origin"
-                target="_blank"
-                href="https://trustseal.enamad.ir/?id=522399&Code=o8fqvvZMjohX11ANciXEsgcm2YoIl6av"
-                className="shrink-0 size-[35px] sm:size-[40px] md:size-[50px] relative"
-            >
-                <Image
-                    referrerPolicy="origin"
-                    src="https://trustseal.enamad.ir/logo.aspx?id=522399&Code=o8fqvvZMjohX11ANciXEsgcm2YoIl6av"
-                    alt=""
-                    width={50} // Adjust to the desired size
-                    height={50} // Adjust to the desired size
-                    style={{ cursor: 'pointer' }}
-                />
-            </Link>
+                src="https://trustseal.enamad.ir/logo.aspx?id=522399&amp;Code=o8fqvvZMjohX11ANciXEsgcm2YoIl6av" alt=""
+                // @ts-ignore
+                code="o8fqvvZMjohX11ANciXEsgcm2YoIl6av" /></a>
             {renderSponsors}
         </div>
     );
