@@ -9,6 +9,7 @@ const Employee = ({
                       team_socials,
                       team_categories,
                       id,
+                      name_image,
                       linkedin,
                       photo
                   }: EmployeeProps) => {
@@ -21,25 +22,26 @@ const Employee = ({
                     <Image src={photo} alt={name} className="object-cover rounded-xl" fill />
                 </div>
             </div>
-            <div className="flex flex-col items-center translate-y-[-16px] xs:translate-y-[-28px]">
-                <span className="text-lg xs:text-xl font-bold pb-2 text-black text-center">
-                   {name}
-                </span>
+            <div className="flex flex-col items-center justify-center gap-4 -translate-y-4 xs:-translate-y-8">
+                <div className="flex flex-col items-center">
+                    {/*<span className="text-lg xs:text-xl font-bold pb-2 text-black text-center">*/}
+                    {/*   {name}*/}
+                    {/*</span>*/}
+                    <Image src={name_image ?? ""} alt={name} className="w-[75%]" width={300} height={300} />
+                </div>
+                <div
+                    className={`w-full flex justify-center items-center gap-4 ${!linkedin ? "grayscale opacity-60" : ""}`}>
+                    {linkedin ? (
+                        <Link href={linkedin} className="hover:scale-[115%] transition-all hover:brightness-125">
+                            <Image src={LinkedinImage} alt="linkedin" className="w-6" />
+                        </Link>
+                    ) : (
+                        <div>
+                            <Image src={LinkedinImage} alt="linkedin" className="w-6" />
+                        </div>
+                    )}
+                </div>
             </div>
-
-            <div className={`w-full flex justify-center items-center gap-4 -translate-y-4 ${!linkedin ? 'grayscale opacity-60' : ''}`}>
-
-                {linkedin ? (
-                    <Link href={linkedin}>
-                        <Image src={LinkedinImage} alt="linkedin" className="w-6" />
-                    </Link>
-                ) : (
-                    <div>
-                        <Image src={LinkedinImage} alt="linkedin" className="w-6" />
-                    </div>
-                )}
-            </div>
-
         </div>
     );
 };

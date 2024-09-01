@@ -34,6 +34,7 @@ declare global {
         photo: string;
         counter: number;
         linkedin?: string;
+        name_image?: string;
         team_categories: {
             id: number,
             name: string;
