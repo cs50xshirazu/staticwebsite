@@ -12,7 +12,7 @@ const Sponsors = () => {
         return sponsors?.filter(sponsor => sponsor.icon !== null).map((sponsor) => {
             return (
                 <Link key={sponsor.id} href={sponsor.link}
-                      className="shrink-0 size-[35px] sm:size-[40px] md:size-[50px] relative">
+                      className="shrink-0 size-[35px] sm:size-[50px] md:size-[70px] relative">
                     <Image
                         className="w-full"
                         src={sponsor.icon!}
@@ -26,8 +26,11 @@ const Sponsors = () => {
 
     return (
         <div className="flex items-center gap-4">
-            <a referrerPolicy="origin" target="_blank"
-               href="https://trustseal.enamad.ir/?id=522399&amp;Code=o8fqvvZMjohX11ANciXEsgcm2YoIl6av"><img
+            <a
+                className="shrink-0 size-[35px] sm:size-[50px] md:size-[70px] rounded-[5px] p-[6px]"
+                referrerPolicy="origin"
+                target="_blank"
+                href="https://trustseal.enamad.ir/?id=522399&amp;Code=o8fqvvZMjohX11ANciXEsgcm2YoIl6av"><img
                 referrerPolicy="origin"
                 src="https://trustseal.enamad.ir/logo.aspx?id=522399&amp;Code=o8fqvvZMjohX11ANciXEsgcm2YoIl6av" alt=""
                 // @ts-ignore
