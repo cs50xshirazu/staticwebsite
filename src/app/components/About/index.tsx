@@ -23,7 +23,7 @@ const About = () => {
             <div className="flex max-lg:flex-col-reverse gap-14 mt-[40px]">
                 <VideoSection />
                 <div className="flex-1 max-lg:flex items-center justify-center flex-col">
-                    <ShapeTitle className="py-7 max-lg:!py-8 sm:py-9 w-fit max-w-[270px] xs:max-w-[300px]" textClassName="text-brand-cream text-lg sm:text-xl font-bold">
+                    <ShapeTitle className="lg:mr-16 py-7 max-lg:!py-8 sm:py-9 w-fit max-w-[270px] xs:max-w-[300px]" textClassName="text-brand-cream text-lg sm:text-xl font-bold">
                         <span className="flex gap-2 items-center">
                             <span className="font-geo-slab-703">
                                 CS50x SHIRAZ

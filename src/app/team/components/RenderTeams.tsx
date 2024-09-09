@@ -26,10 +26,32 @@ const RenderTeams = () => {
 
         const grouped = Object.groupBy(employeesGroups, ({ categoryName }) => categoryName);
 
-        return Object.keys(grouped).sort((a, b) => {
-            if (a === "مدرسین" || a === "تیم مدیریت" || a === "تیم فنی") return -1;
-            return 1;
-        }).map(categoryName => {
+        const categories = Object.keys(grouped);
+        const sortedCategories: string[] = [];
+
+        categories.forEach(category => {
+            if (category === "مدرسین" || category === "تیم مدیریت" || category === "تیم فنی" || category === "تیم علمی") {
+                if(sortedCategories.includes("تیم علمی")) {
+                    if (sortedCategories.includes("تیم فنی")) {
+                        if (sortedCategories.includes("تیم مدیریت")) {
+                            if (!sortedCategories.includes("مدرسین")) {
+                                sortedCategories.unshift("مدرسین");
+                            }
+                        } else {
+                            sortedCategories.unshift("تیم مدیریت");
+                        }
+                    } else {
+                        sortedCategories.unshift("تیم فنی");
+                    }
+                } else {
+                    sortedCategories.unshift("تیم علمی");
+                }
+            } else {
+                sortedCategories.push(category);
+            }
+        });
+
+        return sortedCategories.map(categoryName => {
             return (
                 <TeamDivider
                     key={categoryName}
