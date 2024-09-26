@@ -28,7 +28,7 @@ const Navbar = ({ links }: NavbarProps) => {
     return (
         <nav className="h-[80px] sm:h-[140px] flex flex-col justify-center items-center">
             <div className="container flex max-sm:flex-row-reverse justify-between items-center px-10">
-                <a className="max-sm:hidden" href="https://summer.cs50xshiraz.ir">
+                <a className="max-sm:hidden" href="https://panel.cs50xshiraz.ir">
                     <ShapeTitle className="py-5" textClassName="text-sm font-bold">
                         ورود به پنل کاربری
                     </ShapeTitle>
