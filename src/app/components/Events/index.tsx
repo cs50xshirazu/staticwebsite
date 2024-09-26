@@ -22,7 +22,7 @@ const Events = () => {
                 </span>
             </TitleBar>
 
-            <div className="container mt-[40px] flex justify-center gap-12 xs:gap-16 max-xs:flex-wrap">
+            <div className="container mt-[40px] flex justify-center gap-12 xs:gap-16 flex-wrap">
                 {renderEvents}
             </div>
 

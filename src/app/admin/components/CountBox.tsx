@@ -8,12 +8,12 @@ export type CountBoxProps = {
 const CountBox = ({ count, text }: CountBoxProps) => {
     return (
         <Card shadow="sm">
-            <CardBody className="overflow-visible h-[150px] px-6 py-8">
-                <div className="w-full relative aspect-square rounded-2xl flex gap-2 flex-col justify-between items-start">
-                    <span className="text-6xl text-white font-bold persian-number">
+            <CardBody className="overflow-visible px-6 py-8">
+                <div className="w-full relative rounded-2xl">
+                    <div className="text-6xl text-white font-bold persian-number text-right">
                         {Intl.NumberFormat("fa-IR", {}).format(count)}
-                    </span>
-                    <span className="text-foreground-600">{text}</span>
+                    </div>
+                    <div className="text-foreground-600 text-right pt-2">{text}</div>
                 </div>
             </CardBody>
         </Card>
